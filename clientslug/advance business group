@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Advance Business Group, Inc — Business Management Consulting | Brooklyn Park, MN</title>
+<meta name="description" content="Advance Business Group, Inc. is a women-owned business management consulting firm in Brooklyn Park, Minnesota. Strategic planning, process improvement, leadership coaching and executive facilitation.">
+<!-- SPEC PREVIEW ONLY: keep this noindex tag until the client approves and this goes on their own domain. -->
+<meta name="robots" content="noindex, nofollow">
+<style>
+  :root{
+    --navy:#0f2540;
+    --navy-800:#16355c;
+    --navy-600:#254a78;
+    --slate:#475569;
+    --slate-light:#64748b;
+    --line:#e2e8f0;
+    --bg:#ffffff;
+    --bg-alt:#f6f8fb;
+    --accent:#c9a227;
+    --accent-soft:#f5edd4;
+    --ok:#15803d;
+    --closed:#b91c1c;
+    --radius:14px;
+    --maxw:1140px;
+    --shadow:0 1px 3px rgba(15,37,64,.06), 0 12px 32px rgba(15,37,64,.07);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:78px}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+    color:var(--slate);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{color:var(--navy);line-height:1.2;font-weight:700;letter-spacing:-.02em}
+  h1{font-size:clamp(2.1rem,4.6vw,3.4rem)}
+  h2{font-size:clamp(1.6rem,3vw,2.3rem)}
+  h3{font-size:1.15rem}
+  a{color:var(--navy-600);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+  section{padding:86px 0}
+  .eyebrow{
+    font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;
+    font-weight:700;color:var(--accent);margin-bottom:12px
+  }
+  .lede{font-size:1.06rem;max-width:62ch}
+
+  /* ---------- header ---------- */
+  header{
+    position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);
+    backdrop-filter:saturate(180%) blur(12px);border-bottom:1px solid var(--line);
+    transition:box-shadow .25s ease;
+  }
+  header.scrolled{box-shadow:0 4px 20px rgba(15,37,64,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+  .brand{display:flex;align-items:center;gap:11px;color:var(--navy);font-weight:800;letter-spacing:-.02em}
+  .brand:hover{text-decoration:none}
+  .mark{
+    width:38px;height:38px;border-radius:10px;flex:none;
+    background:linear-gradient(140deg,var(--navy) 0%,var(--navy-600) 100%);
+    display:grid;place-items:center;color:#fff;font-size:1rem;font-weight:800;letter-spacing:-.04em;
+  }
+  .brand span.n{font-size:1.02rem;display:block}
+  .brand span.t{font-size:.7rem;color:var(--slate-light);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+  .links{display:flex;align-items:center;gap:30px}
+  .links a{color:var(--slate);font-size:.93rem;font-weight:600;position:relative}
+  .links a:hover{color:var(--navy);text-decoration:none}
+  .links a::after{
+    content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--accent);transition:width .22s ease
+  }
+  .links a:hover::after,.links a.active::after{width:100%}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer;font-family:inherit;
+    padding:12px 22px;border-radius:9px;font-weight:700;font-size:.92rem;transition:.18s ease;
+  }
+  .btn-primary{background:var(--navy);color:#fff}
+  .btn-primary:hover{background:var(--navy-800);text-decoration:none;transform:translateY(-1px)}
+  .btn-ghost{background:#fff;color:var(--navy);border:1.5px solid var(--line)}
+  .btn-ghost:hover{border-color:var(--navy);text-decoration:none}
+  .burger{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+  .burger i{display:block;width:22px;height:2px;background:var(--navy);border-radius:2px;transition:.25s}
+  .burger.open i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .burger.open i:nth-child(2){opacity:0}
+  .burger.open i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .mobile{display:none;border-top:1px solid var(--line);background:#fff}
+  .mobile.show{display:block}
+  .mobile a{display:block;padding:15px 24px;border-bottom:1px solid var(--line);color:var(--navy);font-weight:600}
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:linear-gradient(165deg,#0f2540 0%,#1c3f68 58%,#254a78 100%);
+    color:#dbe6f2;padding:92px 0 96px;position:relative;overflow:hidden
+  }
+  .hero::after{
+    content:"";position:absolute;right:-140px;top:-140px;width:520px;height:520px;border-radius:50%;
+    background:radial-gradient(circle,rgba(201,162,39,.16) 0%,transparent 68%)
+  }
+  .hero .wrap{position:relative;z-index:2}
+  .hero h1{color:#fff;max-width:16ch}
+  .hero p{margin-top:20px;font-size:1.12rem;max-width:56ch;color:#c3d3e6}
+  .badges{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:24px}
+  .badge{
+    display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.11);
+    border:1px solid rgba(255,255,255,.19);color:#e8f0f8;padding:6px 13px;border-radius:999px;
+    font-size:.79rem;font-weight:600
+  }
+  .badge.gold{background:rgba(201,162,39,.17);border-color:rgba(201,162,39,.42);color:#f0dfa8}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+  .hero-cta .btn-primary{background:var(--accent);color:#2b2205}
+  .hero-cta .btn-primary:hover{background:#d9b134}
+  .hero-cta .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.34)}
+  .hero-cta .btn-ghost:hover{background:rgba(255,255,255,.1);border-color:#fff}
+
+  /* ---------- stats ---------- */
+  .stats{background:var(--bg-alt);border-bottom:1px solid var(--line);padding:0}
+  .stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}
+  .stat{background:var(--bg-alt);padding:34px 20px;text-align:center}
+  .stat b{display:block;font-size:2rem;color:var(--navy);font-weight:800;letter-spacing:-.03em}
+  .stat span{font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--slate-light);font-weight:700}
+
+  /* ---------- services (tabs) ---------- */
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 26px;border-bottom:1px solid var(--line)}
+  .tab{
+    background:none;border:none;cursor:pointer;font-family:inherit;font-size:.93rem;font-weight:700;
+    color:var(--slate-light);padding:12px 18px;border-bottom:3px solid transparent;margin-bottom:-1px;transition:.18s
+  }
+  .tab:hover{color:var(--navy)}
+  .tab[aria-selected="true"]{color:var(--navy);border-bottom-color:var(--accent)}
+  .panel{display:none;animation:fade .35s ease}
+  .panel.show{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+  .panel h3{font-size:1.5rem;margin-bottom:12px}
+  .panel ul{list-style:none;margin-top:20px;display:grid;gap:11px}
+  .panel li{padding-left:28px;position:relative;font-size:.97rem}
+  .panel li::before{
+    content:"";position:absolute;left:0;top:.55em;width:14px;height:8px;border-left:2.5px solid var(--accent);
+    border-bottom:2.5px solid var(--accent);transform:rotate(-45deg)
+  }
+  .panel-aside{
+    background:var(--bg-alt);border:1px solid var(--line);border-radius:var(--radius);padding:28px;
+  }
+  .panel-aside h4{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--slate-light);margin-bottom:14px}
+  .panel-aside p{font-size:.95rem;font-style:italic;color:var(--navy-800)}
+
+  /* ---------- reviews ---------- */
+  .reviews{background:var(--bg-alt)}
+  .rating-hero{display:flex;flex-wrap:wrap;align-items:center;gap:22px;margin:26px 0 34px}
+  .big-score{font-size:3.6rem;font-weight:800;color:var(--navy);letter-spacing:-.04em;line-height:1}
+  .stars{color:var(--accent);font-size:1.35rem;letter-spacing:3px}
+  .bars{flex:1;min-width:250px;max-width:340px;display:grid;gap:5px}
+  .bar-row{display:flex;align-items:center;gap:10px;font-size:.8rem;color:var(--slate-light)}
+  .bar{flex:1;height:8px;background:var(--line);border-radius:99px;overflow:hidden}
+  .bar i{display:block;height:100%;background:var(--accent);width:0;transition:width 1s cubic-bezier(.2,.8,.2,1)}
+  .carousel{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+  .slides{overflow:hidden}
+  .slide{display:none;padding:38px 44px}
+  .slide.show{display:block;animation:fade .35s ease}
+  .slide .quote{font-size:1.08rem;color:var(--navy-800);line-height:1.75}
+  .slide .quote::before{content:"“";font-size:2.6rem;color:var(--accent);line-height:0;vertical-align:-.35em;margin-right:4px}
+  .who{display:flex;align-items:center;gap:13px;margin-top:26px;padding-top:22px;border-top:1px solid var(--line)}
+  .avatar{
+    width:44px;height:44px;border-radius:50%;background:var(--navy-600);color:#fff;flex:none;
+    display:grid;place-items:center;font-weight:800;font-size:.95rem
+  }
+  .who b{display:block;color:var(--navy);font-size:.96rem}
+  .who small{color:var(--slate-light);font-size:.82rem}
+  .car-nav{display:flex;align-items:center;justify-content:space-between;padding:0 44px 26px}
+  .dots{display:flex;gap:8px}
+  .dot{width:9px;height:9px;border-radius:50%;border:none;background:var(--line);cursor:pointer;padding:0;transition:.2s}
+  .dot.on{background:var(--accent);width:26px;border-radius:99px}
+  .arrows{display:flex;gap:8px}
+  .arrow{
+    width:38px;height:38px;border-radius:9px;border:1.5px solid var(--line);background:#fff;cursor:pointer;
+    color:var(--navy);font-size:1rem;display:grid;place-items:center;transition:.18s
+  }
+  .arrow:hover{border-color:var(--navy);background:var(--navy);color:#fff}
+
+  /* ---------- compare table ---------- */
+  .toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:26px 0 18px}
+  .toolbar input,.toolbar select{
+    font-family:inherit;font-size:.9rem;padding:10px 14px;border:1.5px solid var(--line);
+    border-radius:9px;color:var(--navy);background:#fff;outline:none
+  }
+  .toolbar input{flex:1;min-width:200px}
+  .toolbar input:focus,.toolbar select:focus{border-color:var(--navy-600)}
+  .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:#fff}
+  table{width:100%;border-collapse:collapse;font-size:.93rem;min-width:620px}
+  th{
+    text-align:left;padding:15px 20px;background:var(--bg-alt);color:var(--navy);font-size:.75rem;
+    letter-spacing:.1em;text-transform:uppercase;font-weight:800;border-bottom:1px solid var(--line);
+    cursor:pointer;user-select:none;white-space:nowrap
+  }
+  th:hover{background:#eef2f8}
+  th .caret{opacity:.35;font-size:.7rem;margin-left:5px}
+  th.sorted .caret{opacity:1;color:var(--accent)}
+  td{padding:15px 20px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tr:last-child td{border-bottom:none}
+  tr.me{background:#fbf7e8}
+  tr.me td:first-child{box-shadow:inset 3px 0 0 var(--accent)}
+  .pill{display:inline-block;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+    background:var(--accent-soft);color:#7a6210;padding:3px 9px;border-radius:99px;margin-left:8px}
+  .mini-stars{color:var(--accent);letter-spacing:1px}
+  .muted{color:var(--slate-light)}
+  .empty{padding:28px 20px;text-align:center;color:var(--slate-light);font-size:.92rem}
+
+  /* ---------- visit / contact ---------- */
+  .visit{background:var(--bg-alt)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:44px;margin-top:34px;align-items:start}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+  .info-row{display:flex;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}
+  .info-row:last-of-type{border-bottom:none}
+  .ico{
+    width:38px;height:38px;border-radius:9px;background:var(--bg-alt);flex:none;display:grid;place-items:center;
+    font-size:1rem
+  }
+  .info-row b{display:block;color:var(--navy);font-size:.79rem;text-transform:uppercase;letter-spacing:.09em;margin-bottom:2px}
+  .info-row .val{color:var(--slate);font-size:.96rem}
+  .copy{
+    background:none;border:none;cursor:pointer;font-family:inherit;color:var(--navy-600);font-size:.78rem;
+    font-weight:700;padding:2px 0;margin-left:auto;white-space:nowrap
+  }
+  .copy:hover{text-decoration:underline}
+  .status{
+    display:inline-flex;align-items:center;gap:7px;font-weight:800;font-size:.85rem;padding:5px 12px;
+    border-radius:99px;margin-bottom:14px
+  }
+  .status.open{background:#dcfce7;color:var(--ok)}
+  .status.shut{background:#fee2e2;color:var(--closed)}
+  .status .pulse{width:7px;height:7px;border-radius:50%;background:currentColor;animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .hours{list-style:none;font-size:.93rem}
+  .hours li{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px dashed var(--line)}
+  .hours li:last-child{border-bottom:none}
+  .hours li.today{font-weight:800;color:var(--navy)}
+  .hours li.today::after{content:"Today";font-size:.68rem;background:var(--navy);color:#fff;padding:2px 7px;
+    border-radius:99px;margin-left:10px;letter-spacing:.06em}
+  .hours li span:last-child{color:var(--slate)}
+  .map-frame{border:0;width:100%;height:330px;display:block;border-radius:var(--radius);border:1px solid var(--line)}
+
+  form{display:grid;gap:16px}
+  .field label{display:block;font-size:.79rem;font-weight:800;color:var(--navy);text-transform:uppercase;
+    letter-spacing:.09em;margin-bottom:6px}
+  .field input,.field select,.field textarea{
+    width:100%;font-family:inherit;font-size:.96rem;padding:12px 14px;border:1.5px solid var(--line);
+    border-radius:9px;color:var(--navy);outline:none;transition:.18s;background:#fff
+  }
+  .field textarea{resize:vertical;min-height:118px}
+  .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--navy-600);box-shadow:0 0 0 3px rgba(37,74,120,.1)}
+  .field.bad input,.field.bad select,.field.bad textarea{border-color:var(--closed)}
+  .err{color:var(--closed);font-size:.79rem;font-weight:600;margin-top:5px;display:none}
+  .field.bad .err{display:block}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .sent{
+    display:none;background:#dcfce7;border:1px solid #86efac;color:#14532d;padding:18px 20px;
+    border-radius:10px;font-size:.94rem
+  }
+  .sent.show{display:block;animation:fade .35s ease}
+  .note{font-size:.79rem;color:var(--slate-light)}
+
+  footer{background:var(--navy);color:#a9bdd4;padding:56px 0 28px;font-size:.9rem}
+  .fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid rgba(255,255,255,.12)}
+  footer h5{color:#fff;font-size:.78rem;letter-spacing:.13em;text-transform:uppercase;margin-bottom:14px}
+  footer a{color:#a9bdd4;display:block;padding:4px 0}
+  footer a:hover{color:#fff}
+  .fbot{padding-top:22px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:.82rem;color:#7f97b3}
+
+  #top{
+    position:fixed;right:24px;bottom:24px;width:46px;height:46px;border-radius:50%;border:none;cursor:pointer;
+    background:var(--navy);color:#fff;font-size:1.1rem;box-shadow:var(--shadow);opacity:0;pointer-events:none;
+    transition:.25s;z-index:50
+  }
+  #top.show{opacity:1;pointer-events:auto}
+  #top:hover{background:var(--navy-800);transform:translateY(-2px)}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:900px){
+    .stat-grid{grid-template-columns:repeat(2,1fr)}
+    .panel.show,.split,.two{grid-template-columns:1fr}
+    .fgrid{grid-template-columns:1fr;gap:28px}
+  }
+  @media(max-width:760px){
+    .links,.nav .btn{display:none}
+    .burger{display:flex}
+    section{padding:60px 0}
+    .slide,.car-nav{padding-left:26px;padding-right:26px}
+  }
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    html{scroll-behavior:auto}
+    .reveal{opacity:1;transform:none}
+  }
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#home" class="brand">
+      <span class="mark">AB</span>
+      <span>
+        <span class="n">Advance Business Group</span>
+        <span class="t">Brooklyn Park, MN</span>
+      </span>
+    </a>
+    <nav class="links" id="navlinks">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#compare">Compare</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary">Book a consultation</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  </div>
+  <div class="mobile" id="mobile">
+    <a href="#services">Services</a>
+    <a href="#approach">Approach</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#compare">Compare</a>
+    <a href="#visit">Visit</a>
+    <a href="#contact">Book a consultation</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="badges">
+      <span class="badge gold">★ 5.0 · 2 Google reviews</span>
+      <span class="badge">Women-owned</span>
+      <span class="badge" id="heroStatus">Checking hours…</span>
+    </div>
+    <h1>Growth you can actually manage.</h1>
+    <p>Advance Business Group is a business management consulting firm in Brooklyn Park, Minnesota. We help owner-led companies handle rapid growth without losing profitability — through clear strategy, tighter processes, and better people decisions.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Start a conversation →</a>
+      <a href="tel:+16122818869" class="btn btn-ghost">📞 (612) 281-8869</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stat-grid">
+      <div class="stat"><b data-count="5.0" data-dec="1">0</b><span>Google rating</span></div>
+      <div class="stat"><b data-count="100">0</b><span>% 5-star reviews</span></div>
+      <div class="stat"><b data-count="4">0</b><span>Core practice areas</span></div>
+      <div class="stat"><b>MN</b><span>Twin Cities based</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap reveal">
+    <p class="eyebrow">What we do</p>
+    <h2>Four ways we help you move forward</h2>
+    <p class="lede" style="margin-top:14px">Every engagement starts with the same question: what's actually holding this business back? Pick a practice area to see how we work.</p>
+
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-tab="0">Strategic Planning</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="1">Process &amp; Operations</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="2">Leadership Coaching</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="3">Talent &amp; Team Building</button>
+    </div>
+
+    <div class="panel show" data-panel="0">
+      <div>
+        <h3>Strategic Planning &amp; Vision</h3>
+        <p>Most companies don't fail from a lack of ideas — they stall because nobody has agreed on which idea comes first. We facilitate the sessions that turn scattered priorities into a plan your leadership team will actually follow.</p>
+        <ul>
+          <li>Facilitated strategic planning retreats and offsites</li>
+          <li>Vision, mission and multi-year roadmap development</li>
+          <li>Goal-setting frameworks with owners and measurable milestones</li>
+          <li>Quarterly review cadence to keep the plan alive</li>
+        </ul>
+      </div>
+      <aside class="panel-aside">
+        <h4>From a client review</h4>
+        <p>"…envisioning the future for each of those aspects."</p>
+        <p style="font-style:normal;font-size:.82rem;color:var(--slate-light);margin-top:12px">— Donna G., Google review</p>
+      </aside>
+    </div>
+
+    <div class="panel" data-panel="1">
+      <div>
+        <h3>Process Improvement &amp; Operations</h3>
+        <p>Growth exposes every weak seam in how work gets done. We map what's really happening, find the bottleneck, and rebuild the workflow so margin doesn't disappear as revenue climbs.</p>
+        <ul>
+          <li>Current-state process mapping and bottleneck analysis</li>
+          <li>Profitability review — where growth is quietly costing you</li>
+          <li>Standard operating procedures and handoff design</li>
+          <li>Scorecards and KPIs that leadership actually reviews</li>
+        </ul>
+      </div>
+      <aside class="panel-aside">
+        <h4>From a client review</h4>
+        <p>"…struggling with how to manage rapid growth while maintaining profitability, improving processes, flushing out and solving issues…"</p>
+        <p style="font-style:normal;font-size:.82rem;color:var(--slate-light);margin-top:12px">— Donna G., Google review</p>
+      </aside>
+    </div>
+
+    <div class="panel" data-panel="2">
+      <div>
+        <h3>Executive Coaching &amp; Facilitation</h3>
+        <p>Owners rarely get an objective sounding board. We act as that outside voice — listening closely, asking the uncomfortable question, and reframing problems as challenges you can act on.</p>
+        <ul>
+          <li>One-on-one coaching for owners and executives</li>
+          <li>Neutral facilitation for difficult leadership conversations</li>
+          <li>Accountability structures between sessions</li>
+          <li>Succession and ownership-transition thinking</li>
+        </ul>
+      </div>
+      <aside class="panel-aside">
+        <h4>From a client review</h4>
+        <p>"Bill is a great active listener, analytic, facilitator, coach and problem solver."</p>
+        <p style="font-style:normal;font-size:.82rem;color:var(--slate-light);margin-top:12px">— Kathryn J., Google review</p>
+      </aside>
+    </div>
+
+    <div class="panel" data-panel="3">
+      <div>
+        <h3>Talent &amp; Team Building</h3>
+        <p>The right plan with the wrong seats filled goes nowhere. We help you define the roles your next stage requires, then hire and develop against that — instead of against yesterday's org chart.</p>
+        <ul>
+          <li>Role definition and org design for the next stage of growth</li>
+          <li>Hiring process design and interview structure</li>
+          <li>Team assessments and development planning</li>
+          <li>Performance conversations that don't get avoided</li>
+        </ul>
+      </div>
+      <aside class="panel-aside">
+        <h4>From a client review</h4>
+        <p>"…finding the right people, and envisioning the future for each of those aspects."</p>
+        <p style="font-style:normal;font-size:.82rem;color:var(--slate-light);margin-top:12px">— Donna G., Google review</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section id="approach" style="background:var(--bg-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap reveal">
+    <p class="eyebrow">How it works</p>
+    <h2>Objective, structured, and built to outlast the engagement</h2>
+    <div class="split" style="margin-top:30px">
+      <div class="card">
+        <h3 style="margin-bottom:8px">1 · Listen</h3>
+        <p style="font-size:.96rem">We start by hearing the full picture from you and your team — not just the symptom that prompted the call.</p>
+        <h3 style="margin:24px 0 8px">2 · Diagnose</h3>
+        <p style="font-size:.96rem">Together we look objectively at processes, numbers, and goals to separate real constraints from noise.</p>
+      </div>
+      <div class="card">
+        <h3 style="margin-bottom:8px">3 · Reframe</h3>
+        <p style="font-size:.96rem">Problems become challenges with owners, options, and trade-offs you can weigh clearly.</p>
+        <h3 style="margin:24px 0 8px">4 · Build the habit</h3>
+        <p style="font-size:.96rem">We leave behind a cadence your team runs without us — that's the point.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap reveal">
+    <p class="eyebrow">Client reviews</p>
+    <h2>What clients say on Google</h2>
+
+    <div class="rating-hero">
+      <div>
+        <div class="big-score">5.0</div>
+        <div class="stars">★★★★★</div>
+        <div style="font-size:.85rem;color:var(--slate-light);margin-top:4px">Based on 2 Google reviews</div>
+      </div>
+      <div class="bars" id="bars">
+        <div class="bar-row"><span>5</span><span class="bar"><i data-w="100"></i></span><span>2</span></div>
+        <div class="bar-row"><span>4</span><span class="bar"><i data-w="0"></i></span><span>0</span></div>
+        <div class="bar-row"><span>3</span><span class="bar"><i data-w="0"></i></span><span>0</span></div>
+        <div class="bar-row"><span>2</span><span class="bar"><i data-w="0"></i></span><span>0</span></div>
+        <div class="bar-row"><span>1</span><span class="bar"><i data-w="0"></i></span><span>0</span></div>
+      </div>
+    </div>
+
+    <div class="carousel">
+      <div class="slides" id="slides">
+        <div class="slide show">
+          <div class="stars" style="margin-bottom:14px">★★★★★</div>
+          <p class="quote">Several years ago we were struggling with how to manage rapid growth while maintaining profitability, improving processes, flushing out and solving issues, finding the right people, and envisioning the future for each of those aspects.…</p>
+          <div class="who">
+            <div class="avatar">DG</div>
+            <div><b>Donna G.</b><small>Verified Google review · 5 years ago</small></div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="stars" style="margin-bottom:14px">★★★★★</div>
+          <p class="quote">Bill is a great active listener, analytic, facilitator, coach and problem solver. He has supported us in looking at problems as challenges and to look objectively at solutions, processes and goals to overcome these challenges and meet…</p>
+          <div class="who">
+            <div class="avatar">KJ</div>
+            <div><b>Kathryn J.</b><small>Verified Google review · 5 years ago</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="car-nav">
+        <div class="dots" id="dots"></div>
+        <div class="arrows">
+          <button class="arrow" id="prev" aria-label="Previous review">‹</button>
+          <button class="arrow" id="next" aria-label="Next review">›</button>
+        </div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:14px">Review excerpts as shown on the Google Maps listing. <a href="https://www.google.com/maps/search/?api=1&amp;query=Advance+Business+Group+Inc+Brooklyn+Park+MN" target="_blank" rel="noopener">Read them in full on Google →</a></p>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section id="compare">
+  <div class="wrap reveal">
+    <p class="eyebrow">Local landscape</p>
+    <h2>Compare consultants in the Twin Cities</h2>
+    <p class="lede" style="margin-top:14px">Firms that appear alongside us in Google's "people also search for." Search, filter, and sort the columns — we think the comparison speaks for itself.</p>
+
+    <div class="toolbar">
+      <input type="search" id="q" placeholder="Search firms…" aria-label="Search firms">
+      <select id="cat" aria-label="Filter by category">
+        <option value="">All categories</option>
+        <option>Business management consultant</option>
+        <option>Business to business service</option>
+        <option>Consultant</option>
+      </select>
+      <select id="rev" aria-label="Filter by reviews">
+        <option value="all">Any review count</option>
+        <option value="has">Has reviews</option>
+        <option value="none">No reviews yet</option>
+      </select>
+      <button class="btn btn-ghost" id="reset">Reset</button>
+    </div>
+
+    <div class="tbl-wrap">
+      <table id="tbl">
+        <thead>
+          <tr>
+            <th data-key="name">Firm <span class="caret">▾</span></th>
+            <th data-key="cat">Category <span class="caret">▾</span></th>
+            <th data-key="rating" class="sorted">Rating <span class="caret">▾</span></th>
+            <th data-key="count">Reviews <span class="caret">▾</span></th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="empty" id="empty" style="display:none">No firms match those filters.</div>
+    </div>
+    <p class="note" style="margin-top:12px">Ratings and review counts as displayed on Google Maps at the time this page was built.</p>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="visit" id="visit">
+  <div class="wrap reveal">
+    <p class="eyebrow">Find us</p>
+    <h2>Visit the Brooklyn Park office</h2>
+    <div class="split">
+      <div class="card">
+        <div class="status" id="statusPill"><span class="pulse"></span><span id="statusText">Checking…</span></div>
+        <div id="statusSub" style="font-size:.88rem;color:var(--slate-light);margin-bottom:6px"></div>
+
+        <div class="info-row">
+          <div class="ico">📍</div>
+          <div style="flex:1">
+            <b>Address</b>
+            <div class="val">8532 Inverness Ln N #100<br>Brooklyn Park, MN 55443</div>
+            <div class="val muted" style="font-size:.82rem;margin-top:4px">Plus code: 4M66+5H Brooklyn Park, Minnesota</div>
+          </div>
+          <button class="copy" data-copy="8532 Inverness Ln N #100, Brooklyn Park, MN 55443">Copy</button>
+        </div>
+
+        <div class="info-row">
+          <div class="ico">📞</div>
+          <div style="flex:1">
+            <b>Phone</b>
+            <div class="val"><a href="tel:+16122818869">(612) 281-8869</a></div>
+          </div>
+          <button class="copy" data-copy="(612) 281-8869">Copy</button>
+        </div>
+
+        <div class="info-row">
+          <div class="ico">🏛️</div>
+          <div style="flex:1">
+            <b>Business type</b>
+            <div class="val">Business management consultant · Identifies as women-owned</div>
+          </div>
+        </div>
+
+        <h3 style="margin:24px 0 10px;font-size:1rem">Office hours</h3>
+        <ul class="hours" id="hoursList"></ul>
+        <p class="note" style="margin-top:12px">Hours reflect the Google Maps listing (opens 8 AM, closes 5 PM). Please call ahead for evening or weekend availability.</p>
+      </div>
+
+      <div>
+        <iframe class="map-frame" loading="lazy" title="Map to Advance Business Group, Inc"
+          src="https://www.google.com/maps?q=8532+Inverness+Ln+N+%23100,+Brooklyn+Park,+MN+55443&output=embed"></iframe>
+        <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+          <a class="btn btn-primary" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/dir/?api=1&destination=8532+Inverness+Ln+N+%23100,+Brooklyn+Park,+MN+55443">Get directions</a>
+          <a class="btn btn-ghost" target="_blank" rel="noopener"
+             href="https://www.google.com/maps/search/?api=1&query=Advance+Business+Group+Inc+Brooklyn+Park+MN">View on Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap reveal" style="max-width:760px">
+    <p class="eyebrow">Get started</p>
+    <h2>Book an initial consultation</h2>
+    <p class="lede" style="margin:14px 0 26px">Tell us what's going on. We'll follow up to schedule a no-obligation conversation about whether we're the right fit.</p>
+
+    <div class="sent" id="sent"><b>Thanks — your message is ready to send.</b><br>This is a demo form with no server attached. Connect it to your email or CRM, or reach us directly at <a href="tel:+16122818869">(612) 281-8869</a>.</div>
+
+    <form id="form" novalidate>
+      <div class="two">
+        <div class="field" id="f-name">
+          <label for="name">Your name *</label>
+          <input id="name" name="name" type="text" autocomplete="name">
+          <div class="err">Please enter your name.</div>
+        </div>
+        <div class="field" id="f-company">
+          <label for="company">Company</label>
+          <input id="company" name="company" type="text" autocomplete="organization">
+        </div>
+      </div>
+      <div class="two">
+        <div class="field" id="f-email">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" autocomplete="email">
+          <div class="err">Please enter a valid email address.</div>
+        </div>
+        <div class="field" id="f-phone">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <div class="field" id="f-topic">
+        <label for="topic">What would you like help with? *</label>
+        <select id="topic" name="topic">
+          <option value="">Select an area…</option>
+          <option>Strategic planning &amp; vision</option>
+          <option>Process improvement &amp; operations</option>
+          <option>Leadership coaching &amp; facilitation</option>
+          <option>Talent &amp; team building</option>
+          <option>Not sure yet</option>
+        </select>
+        <div class="err">Please choose an area.</div>
+      </div>
+      <div class="field" id="f-msg">
+        <label for="msg">Tell us more *</label>
+        <textarea id="msg" name="msg" placeholder="What's the challenge you're facing right now?"></textarea>
+        <div class="err">Please add a few details (at least 10 characters).</div>
+      </div>
+      <button type="submit" class="btn btn-primary" style="justify-self:start">Send message</button>
+      <p class="note">Or call <a href="tel:+16122818869">(612) 281-8869</a> — Monday to Friday, 8 AM to 5 PM.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="brand" style="margin-bottom:12px">
+          <span class="mark">AB</span>
+          <span><span class="n" style="color:#fff">Advance Business Group, Inc</span>
+          <span class="t" style="color:#7f97b3">Business management consultant</span></span>
+        </div>
+        <p style="max-width:38ch">Helping Twin Cities businesses grow with clarity — strategy, process, leadership, and people.</p>
+        <p style="margin-top:12px;color:#c9a227;font-weight:700;font-size:.82rem">★ 5.0 on Google · Women-owned</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <a href="#services">Strategic planning</a>
+        <a href="#services">Process improvement</a>
+        <a href="#services">Leadership coaching</a>
+        <a href="#services">Talent &amp; team building</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <a href="tel:+16122818869">(612) 281-8869</a>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;destination=8532+Inverness+Ln+N+%23100,+Brooklyn+Park,+MN+55443" target="_blank" rel="noopener">8532 Inverness Ln N #100<br>Brooklyn Park, MN 55443</a>
+        <a href="#contact">Book a consultation</a>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>&copy; <span id="yr"></span> Advance Business Group, Inc. All rights reserved.</span>
+      <span>Mon–Fri · 8:00 AM – 5:00 PM CT</span>
+    </div>
+  </div>
+</footer>
+
+<button id="top" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- year ---------- */
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  /* ---------- header + mobile nav ---------- */
+  var hdr = document.getElementById('hdr'),
+      burger = document.getElementById('burger'),
+      mobile = document.getElementById('mobile'),
+      topBtn = document.getElementById('top');
+
+  burger.addEventListener('click', function(){
+    var open = mobile.classList.toggle('show');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobile.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){
+      mobile.classList.remove('show');
+      burger.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  window.addEventListener('scroll', function(){
+    hdr.classList.toggle('scrolled', window.scrollY > 8);
+    topBtn.classList.toggle('show', window.scrollY > 520);
+  }, {passive:true});
+
+  topBtn.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  /* ---------- scrollspy ---------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('#navlinks a'));
+  var sections = navLinks.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  if('IntersectionObserver' in window){
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          navLinks.forEach(function(a,i){ a.classList.toggle('active', sections[i] === en.target); });
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    sections.forEach(function(s){ if(s) spy.observe(s); });
+  }
+
+  /* ---------- reveal on scroll ---------- */
+  var reveals = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var ro = new IntersectionObserver(function(entries, obs){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add('in'); obs.unobserve(en.target); }
+      });
+    }, {threshold:.12});
+    reveals.forEach(function(el){ ro.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ---------- animated stat counters ---------- */
+  var counted = false;
+  function runCounters(){
+    if(counted) return; counted = true;
+    document.querySelectorAll('[data-count]').forEach(function(el){
+      var target = parseFloat(el.getAttribute('data-count')),
+          dec = parseInt(el.getAttribute('data-dec') || '0', 10),
+          start = performance.now(), dur = 1100;
+      function step(now){
+        var p = Math.min((now - start)/dur, 1);
+        var eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = (target * eased).toFixed(dec);
+        if(p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  var statsEl = document.querySelector('.stats');
+  if('IntersectionObserver' in window && statsEl){
+    new IntersectionObserver(function(en, o){
+      if(en[0].isIntersecting){ runCounters(); o.disconnect(); }
+    }, {threshold:.4}).observe(statsEl);
+  } else { runCounters(); }
+
+  /* ---------- rating bars ---------- */
+  var barsEl = document.getElementById('bars');
+  function fillBars(){
+    barsEl.querySelectorAll('i').forEach(function(i){ i.style.width = i.getAttribute('data-w') + '%'; });
+  }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(en, o){
+      if(en[0].isIntersecting){ fillBars(); o.disconnect(); }
+    }, {threshold:.4}).observe(barsEl);
+  } else { fillBars(); }
+
+  /* ---------- service tabs ---------- */
+  var tabs = document.querySelectorAll('.tab'),
+      panels = document.querySelectorAll('.panel');
+  tabs.forEach(function(t){
+    t.addEventListener('click', function(){
+      var idx = t.getAttribute('data-tab');
+      tabs.forEach(function(x){ x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });
+      panels.forEach(function(p){ p.classList.toggle('show', p.getAttribute('data-panel') === idx); });
+    });
+  });
+
+  /* ---------- review carousel ---------- */
+  var slides = document.querySelectorAll('#slides .slide'),
+      dotsEl = document.getElementById('dots'),
+      cur = 0, timer;
+
+  slides.forEach(function(_, i){
+    var d = document.createElement('button');
+    d.className = 'dot' + (i === 0 ? ' on' : '');
+    d.setAttribute('aria-label', 'Review ' + (i+1));
+    d.addEventListener('click', function(){ go(i); restart(); });
+    dotsEl.appendChild(d);
+  });
+  var dots = dotsEl.querySelectorAll('.dot');
+
+  function go(i){
+    cur = (i + slides.length) % slides.length;
+    slides.forEach(function(s, n){ s.classList.toggle('show', n === cur); });
+    dots.forEach(function(d, n){ d.classList.toggle('on', n === cur); });
+  }
+  function restart(){ clearInterval(timer); timer = setInterval(function(){ go(cur + 1); }, 8000); }
+  document.getElementById('next').addEventListener('click', function(){ go(cur + 1); restart(); });
+  document.getElementById('prev').addEventListener('click', function(){ go(cur - 1); restart(); });
+  restart();
+
+  /* ---------- comparison table ---------- */
+  var firms = [
+    {name:'Advance Business Group, Inc', cat:'Business management consultant', rating:5.0, count:2, me:true},
+    {name:'Advanced Management & Solutions', cat:'Business to business service', rating:5.0, count:1},
+    {name:'ActionCOACH MN', cat:'Business management consultant', rating:5.0, count:37},
+    {name:'Advance Consulting LLC', cat:'Consultant', rating:null, count:0},
+    {name:'Smart Business Consultants, Inc', cat:'Consultant', rating:null, count:0},
+    {name:'Strategic Business Ventures, Inc.', cat:'Business management consultant', rating:5.0, count:2}
+  ];
+  var sortKey = 'rating', sortDir = -1;
+  var tbody = document.getElementById('tbody'),
+      emptyEl = document.getElementById('empty'),
+      qEl = document.getElementById('q'),
+      catEl = document.getElementById('cat'),
+      revEl = document.getElementById('rev');
+
+  function starStr(r){
+    if(r === null) return '<span class="muted">—</span>';
+    return '<span class="mini-stars">' + '★'.repeat(Math.round(r)) + '</span> <b style="color:var(--navy)">' + r.toFixed(1) + '</b>';
+  }
+  function esc(s){ return String(s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+
+  function render(){
+    var q = qEl.value.trim().toLowerCase(),
+        c = catEl.value,
+        r = revEl.value;
+
+    var rows = firms.filter(function(f){
+      if(q && f.name.toLowerCase().indexOf(q) === -1 && f.cat.toLowerCase().indexOf(q) === -1) return false;
+      if(c && f.cat !== c) return false;
+      if(r === 'has' && f.count === 0) return false;
+      if(r === 'none' && f.count > 0) return false;
+      return true;
+    });
+
+    rows.sort(function(a, b){
+      var av = a[sortKey], bv = b[sortKey];
+      if(av === null) av = -1;
+      if(bv === null) bv = -1;
+      if(typeof av === 'string') return av.localeCompare(bv) * sortDir;
+      return (av - bv) * sortDir;
+    });
+
+    tbody.innerHTML = rows.map(function(f){
+      return '<tr class="' + (f.me ? 'me' : '') + '">' +
+        '<td><b style="color:var(--navy)">' + esc(f.name) + '</b>' + (f.me ? '<span class="pill">That\'s us</span>' : '') + '</td>' +
+        '<td class="muted">' + esc(f.cat) + '</td>' +
+        '<td>' + starStr(f.rating) + '</td>' +
+        '<td>' + (f.count === 0 ? '<span class="muted">No reviews</span>' : f.count) + '</td>' +
+      '</tr>';
+    }).join('');
+
+    emptyEl.style.display = rows.length ? 'none' : 'block';
+  }
+
+  document.querySelectorAll('#tbl th').forEach(function(th){
+    th.addEventListener('click', function(){
+      var k = th.getAttribute('data-key');
+      if(k === sortKey){ sortDir *= -1; } else { sortKey = k; sortDir = (k === 'name' || k === 'cat') ? 1 : -1; }
+      document.querySelectorAll('#tbl th').forEach(function(x){ x.classList.toggle('sorted', x === th); });
+      th.querySelector('.caret').textContent = sortDir === 1 ? '▴' : '▾';
+      render();
+    });
+  });
+  [qEl, catEl, revEl].forEach(function(el){ el.addEventListener('input', render); });
+  document.getElementById('reset').addEventListener('click', function(){
+    qEl.value = ''; catEl.value = ''; revEl.value = 'all';
+    sortKey = 'rating'; sortDir = -1;
+    render();
+  });
+  render();
+
+  /* ---------- hours + open/closed status ---------- */
+  var HOURS = [
+    {d:'Sunday',    open:null, close:null},
+    {d:'Monday',    open:8*60, close:17*60},
+    {d:'Tuesday',   open:8*60, close:17*60},
+    {d:'Wednesday', open:8*60, close:17*60},
+    {d:'Thursday',  open:8*60, close:17*60},
+    {d:'Friday',    open:8*60, close:17*60},
+    {d:'Saturday',  open:null, close:null}
+  ];
+
+  function centralNow(){
+    // Interpret "now" in America/Chicago regardless of the visitor's timezone.
+    var s = new Date().toLocaleString('en-US', {timeZone:'America/Chicago'});
+    return new Date(s);
+  }
+  function fmt(mins){
+    var h = Math.floor(mins/60), m = mins % 60,
+        ap = h >= 12 ? 'PM' : 'AM',
+        hh = h % 12 === 0 ? 12 : h % 12;
+    return hh + ':' + (m < 10 ? '0' : '') + m + ' ' + ap;
+  }
+
+  var now = centralNow(),
+      day = now.getDay(),
+      mins = now.getHours()*60 + now.getMinutes(),
+      today = HOURS[day],
+      isOpen = today.open !== null && mins >= today.open && mins < today.close;
+
+  // hours list, starting Monday
+  var order = [1,2,3,4,5,6,0];
+  document.getElementById('hoursList').innerHTML = order.map(function(i){
+    var h = HOURS[i];
+    return '<li class="' + (i === day ? 'today' : '') + '"><span>' + h.d + '</span><span>' +
+      (h.open === null ? 'Closed' : fmt(h.open) + ' – ' + fmt(h.close)) + '</span></li>';
+  }).join('');
+
+  var pill = document.getElementById('statusPill'),
+      txt = document.getElementById('statusText'),
+      sub = document.getElementById('statusSub'),
+      heroBadge = document.getElementById('heroStatus');
+
+  function nextOpenLabel(){
+    for(var k = 1; k <= 7; k++){
+      var nd = HOURS[(day + k) % 7];
+      if(nd.open !== null) return (k === 1 ? 'tomorrow' : nd.d) + ' at ' + fmt(nd.open);
+    }
+    return '';
+  }
+
+  if(isOpen){
+    var left = today.close - mins;
+    pill.className = 'status open';
+    txt.textContent = 'Open now';
+    sub.textContent = left <= 60
+      ? 'Closes soon — ' + fmt(today.close) + ' (in ' + left + ' min)'
+      : 'Closes at ' + fmt(today.close) + ' CT';
+    heroBadge.textContent = '● Open now · closes ' + fmt(today.close) + ' CT';
+  } else {
+    pill.className = 'status shut';
+    txt.textContent = 'Closed now';
+    var label = (today.open !== null && mins < today.open)
+      ? 'today at ' + fmt(today.open)
+      : nextOpenLabel();
+    sub.textContent = 'Opens ' + label + ' CT';
+    heroBadge.textContent = '● Closed · opens ' + label + ' CT';
+  }
+
+  /* ---------- copy buttons ---------- */
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click', function(){
+      var val = b.getAttribute('data-copy'), old = b.textContent;
+      function done(){ b.textContent = 'Copied ✓'; setTimeout(function(){ b.textContent = old; }, 1600); }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(val).then(done, function(){ b.textContent = 'Press ⌘C'; });
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = val; document.body.appendChild(ta); ta.select();
+        try { document.execCommand('copy'); done(); } catch(e){ b.textContent = 'Press ⌘C'; }
+        document.body.removeChild(ta);
+      }
+    });
+  });
+
+  /* ---------- contact form validation ---------- */
+  var form = document.getElementById('form'), sentEl = document.getElementById('sent');
+  function setBad(id, bad){ document.getElementById(id).classList.toggle('bad', bad); }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('name').value.trim(),
+        email = document.getElementById('email').value.trim(),
+        topic = document.getElementById('topic').value,
+        msg = document.getElementById('msg').value.trim(),
+        ok = true;
+
+    if(!name){ setBad('f-name', true); ok = false; } else setBad('f-name', false);
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){ setBad('f-email', true); ok = false; } else setBad('f-email', false);
+    if(!topic){ setBad('f-topic', true); ok = false; } else setBad('f-topic', false);
+    if(msg.length < 10){ setBad('f-msg', true); ok = false; } else setBad('f-msg', false);
+
+    if(!ok){
+      var firstBad = form.querySelector('.field.bad input, .field.bad select, .field.bad textarea');
+      if(firstBad) firstBad.focus();
+      return;
+    }
+    sentEl.classList.add('show');
+    sentEl.scrollIntoView({behavior:'smooth', block:'center'});
+    form.reset();
+  });
+
+  form.addEventListener('input', function(e){
+    var f = e.target.closest('.field');
+    if(f && f.classList.contains('bad')) f.classList.remove('bad');
+  });
+})();
+</script>
+</body>
+</html>
