@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Envy Nails Hennepin | Nail Salon in Minneapolis, MN</title>
+<meta name="description" content="Envy Nails Hennepin is a nail salon on Hennepin Ave in Minneapolis, MN. Dip manicures, pedicures and color matching. Call (612) 374-1883.">
+<!-- SPEC PREVIEW ONLY: keep this noindex tag until the client approves and this goes on their own domain. -->
+<meta name="robots" content="noindex, nofollow">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NailSalon",
+  "name": "Envy Nails Hennepin",
+  "telephone": "+1-612-374-1883",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2228 Hennepin Ave",
+    "addressLocality": "Minneapolis",
+    "addressRegion": "MN",
+    "postalCode": "55405",
+    "addressCountry": "US"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.4",
+    "reviewCount": "221"
+  }
+}
+</script>
+<style>
+:root{
+  --brand:#8b3a62;
+  --brand-dark:#6d2c4c;
+  --ink:#1a1a1a;
+  --muted:#5a5a5a;
+  --line:#e6e6e6;
+  --bg:#ffffff;
+  --bg-soft:#faf7f8;
+  --radius:14px;
+  --pad:20px;
+  --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color:var(--ink);
+  background:var(--bg);
+  font-size:1.05rem;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+section{padding:52px 0}
+section.soft{background:var(--bg-soft)}
+h1,h2,h3{line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(1.9rem,6vw,3rem);letter-spacing:-.02em}
+h2{font-size:clamp(1.45rem,4vw,2rem);letter-spacing:-.01em}
+h3{font-size:1.15rem}
+p{margin:0 0 1em}
+a{color:var(--brand-dark)}
+
+/* header */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:saturate(180%) blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px var(--pad);max-width:var(--max);margin:0 auto}
+.brandname{font-weight:700;font-size:1.05rem;letter-spacing:-.01em}
+.brandname span{display:block;font-weight:500;font-size:.72rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.calltext-long{display:none}
+
+/* buttons */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:48px;padding:0 20px;border-radius:999px;
+  font-weight:650;font-size:1rem;text-decoration:none;
+  border:1.5px solid transparent;transition:background .15s,color .15s,border-color .15s;
+}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-dark)}
+.btn-ghost{background:#fff;color:var(--brand-dark);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--brand)}
+.btn-sm{min-height:42px;padding:0 16px;font-size:.95rem}
+.cta-row{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+
+/* hero */
+.hero{
+  padding:56px 0 60px;
+  background:linear-gradient(160deg,var(--bg-soft) 0%,#fff 65%);
+  border-bottom:1px solid var(--line);
+}
+.eyebrow{
+  display:inline-block;font-size:.78rem;font-weight:650;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--brand-dark);
+  background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 13px;margin-bottom:18px;
+}
+.lede{font-size:1.18rem;color:var(--muted);max-width:44ch}
+.proof{display:flex;align-items:center;gap:8px;margin-top:20px;font-weight:600;flex-wrap:wrap}
+.stars{color:var(--brand);letter-spacing:.06em}
+.proof small{font-weight:400;color:var(--muted)}
+
+/* cards */
+.grid{display:grid;gap:16px;grid-template-columns:1fr;margin-top:28px}
+.card{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;box-shadow:0 1px 2px rgba(0,0,0,.03);
+}
+.card h3{margin-bottom:.35em}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+.card-ph{border-style:dashed;border-width:2px;background:var(--bg-soft);box-shadow:none}
+
+/* quotes */
+.quotes{display:grid;gap:16px;grid-template-columns:1fr;margin-top:28px}
+figure{margin:0;background:#fff;border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:var(--radius);padding:22px}
+blockquote{margin:0 0 12px;font-size:1.05rem}
+figcaption{font-size:.9rem;color:var(--muted)}
+figcaption b{color:var(--ink);font-weight:650}
+
+/* facts list */
+.facts{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px}
+.facts li{display:flex;gap:12px;align-items:flex-start}
+.facts .tick{color:var(--brand);font-weight:700;flex:0 0 auto}
+
+/* visit */
+.visit-grid{display:grid;gap:24px;grid-template-columns:1fr;margin-top:28px}
+.addr{font-style:normal;font-size:1.1rem;line-height:1.55}
+.hours{
+  margin-top:18px;padding:14px 16px;background:#fff;
+  border:1px solid var(--line);border-radius:var(--radius);font-size:.98rem;
+}
+.hours b{color:var(--ink)}
+.hours small{display:block;color:var(--muted);margin-top:2px}
+
+/* photo placeholder */
+.photo-ph{
+  border:2px dashed var(--line);border-radius:var(--radius);
+  background:var(--bg-soft);padding:44px 22px;text-align:center;
+  color:var(--muted);font-size:.95rem;
+}
+.photo-ph b{display:block;color:var(--ink);margin-bottom:4px}
+
+/* footer */
+footer{background:var(--ink);color:#e8e8e8;padding:40px 0 34px;font-size:.95rem}
+footer a{color:#fff}
+footer .nap{display:grid;gap:6px;margin-bottom:22px}
+footer .name{font-weight:700;font-size:1.05rem;color:#fff}
+.specnote{border-top:1px solid rgba(255,255,255,.16);padding-top:16px;color:#a9a9a9;font-size:.82rem;max-width:62ch}
+
+@media (min-width:768px){
+  section{padding:72px 0}
+  .hero{padding:84px 0 88px}
+  .cta-row{flex-direction:row;margin-top:32px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:20px}
+  .quotes{grid-template-columns:repeat(3,1fr)}
+  .visit-grid{grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+  .lede{font-size:1.28rem}
+  .calltext-long{display:inline}
+  .calltext-short{display:none}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <div class="brandname">Envy Nails Hennepin<span>Minneapolis, MN</span></div>
+    <a class="btn btn-primary btn-sm" href="tel:+16123741883"><span class="calltext-short">Call</span><span class="calltext-long">Call (612) 374-1883</span></a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">Nail salon &middot; Minneapolis</span>
+    <h1>Envy Nails Hennepin</h1>
+    <p class="lede">A nail salon on Hennepin Ave in Minneapolis, known for dip manicures and technicians who take their time with you.</p>
+    <div class="proof">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span>4.4</span>
+      <small>&middot; 221 Google reviews</small>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="tel:+16123741883">Call (612) 374-1883</a>
+      <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=2228%20Hennepin%20Ave%2C%20Minneapolis%2C%20MN%2055405" target="_blank" rel="noopener">Get directions</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lede">The services customers name most often in their reviews.</p>
+    <div class="grid">
+      <!-- Cards 1-3 sourced from Google review keyword chips: dip manicure (9), color matching (2), plus manicure/pedicure named in review text. -->
+      <div class="card"><h3>Dip manicures</h3><p>The service customers bring up most by name. Nine separate reviews mention the dip.</p></div>
+      <div class="card"><h3>Manicures and pedicures</h3><p>The classics, done unhurried. Reviewers describe the room as relaxing more often than they describe anything else about it.</p></div>
+      <div class="card"><h3>Color matching</h3><p>Not sure what you want yet? Bring an idea, a photo, or the outfit &mdash; the techs here are used to helping people land on a shade.</p></div>
+      <!-- PLACEHOLDER: full service list and pricing unconfirmed. The Google listing has a "Menu" photo category worth checking, but the owner should supply the real menu. -->
+      <div class="card card-ph"><h3>Your full service menu</h3><p>Send over everything you offer and it goes here &mdash; gel, acrylics, fills, nail art, waxing, whatever belongs on the board.</p></div>
+    </div>
+    <p style="margin-top:24px">Looking for something not listed? <a href="tel:+16123741883">Call (612) 374-1883</a> and ask.</p>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <h2>What customers say</h2>
+    <div class="quotes">
+      <!-- Verbatim Google reviews. Reviewer surnames abbreviated per standing rule. -->
+      <figure><blockquote>"The owner is super nice and friendly, the shop is clean, the techs are all so kind and helpful."</blockquote><figcaption><b>Courtney H.</b> &middot; Google review</figcaption></figure>
+      <figure><blockquote>"Absolutely love my nails, and my Nail tech Nina is an absolute doll!!"</blockquote><figcaption><b>Ace N.</b> &middot; Google review</figcaption></figure>
+      <figure><blockquote>"I got a manicure and pedicure and I loved it. Great service and relaxing vibes."</blockquote><figcaption><b>Camille W.</b> &middot; Google review</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>What this salon is known for</h2>
+    <ul class="facts">
+      <li><span class="tick">&#10003;</span><span><b>Kind staff, over and over.</b> Twenty separate reviews single out the staff. It is the most common thing anyone says about this place.</span></li>
+      <li><span class="tick">&#10003;</span><span><b>LGBTQ+ friendly.</b> Listed as an attribute on the salon's Google profile.</span></li>
+      <li><span class="tick">&#10003;</span><span><b>Techs people ask for by name.</b> Nina and Eric both get named in reviews by customers who came back for them.</span></li>
+      <li><span class="tick">&#10003;</span><span><b>4.4 stars across 221 Google reviews.</b> Hundreds of them, not a handful.</span></li>
+    </ul>
+    <div class="photo-ph" style="margin-top:32px">
+      <b>Your photos go here</b>
+      We'll use real pictures of the salon and your work &mdash; no stock photography.
+    </div>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <h2>Visit us</h2>
+    <div class="visit-grid">
+      <div>
+        <address class="addr">
+          2228 Hennepin Ave<br>Minneapolis, MN 55405
+        </address>
+        <!-- PLACEHOLDER: full weekly hours unconfirmed &mdash; the listing only exposed today's closing time. -->
+        <div class="hours">
+          <b>Open today until 7 PM</b>
+          <small>Hours vary by day &mdash; give us a call to check before you head over.</small>
+        </div>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+16123741883">Call (612) 374-1883</a>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=2228%20Hennepin%20Ave%2C%20Minneapolis%2C%20MN%2055405" target="_blank" rel="noopener">Directions</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Before you come in</h3>
+        <p>Give us a call to check the wait or to ask for a specific tech. If you have a color or a design in mind, bring a photo &mdash; it makes the whole appointment easier.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="nap">
+      <span class="name">Envy Nails Hennepin</span>
+      <span>2228 Hennepin Ave, Minneapolis, MN 55405</span>
+      <span><a href="tel:+16123741883">(612) 374-1883</a></span>
+    </div>
+    <p class="specnote">
+      This is a proposed website design prepared for Envy Nails Hennepin. It is not the business's
+      official site and is not affiliated with it. Business details shown were taken from the
+      public Google Maps listing and need to be confirmed by the owner.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
