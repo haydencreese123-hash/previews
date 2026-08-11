@@ -129,12 +129,20 @@ figcaption b{color:var(--ink);font-weight:650}
 .hours b{color:var(--ink)}
 .hours small{display:block;color:var(--muted);margin-top:2px;line-height:1.5}
 
-.photo-ph{
-  border:2px dashed var(--line);border-radius:var(--radius);
-  background:var(--bg-soft);padding:44px 22px;text-align:center;
-  color:var(--muted);font-size:.95rem;
+.gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);margin-top:28px}
+.tile{
+  aspect-ratio:4/3;border:2px dashed var(--line);border-radius:var(--radius);
+  background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:5px;text-align:center;padding:14px 10px;color:var(--muted);
 }
-.photo-ph b{display:block;color:var(--ink);margin-bottom:4px}
+.tile .glyph{width:26px;height:26px;color:var(--brand);opacity:.55;margin-bottom:2px}
+.tile .label{font-weight:650;color:var(--ink);font-size:.92rem;line-height:1.25}
+.tile .sub{font-size:.78rem;line-height:1.35}
+.gallery-note{
+  margin-top:20px;padding:14px 16px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius);font-size:.95rem;color:var(--muted);
+}
+.gallery-note b{color:var(--ink)}
 
 footer{background:var(--ink);color:#e8e8e8;padding:40px 0 34px;font-size:.95rem}
 footer a{color:#fff}
@@ -150,6 +158,8 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
   .hero{padding:84px 0 88px}
   .cta-row{flex-direction:row;margin-top:32px}
   .grid{grid-template-columns:repeat(2,1fr);gap:20px}
+  .gallery{grid-template-columns:repeat(3,1fr);gap:18px}
+  .tile .label{font-size:1rem}
   .quotes{grid-template-columns:repeat(3,1fr)}
   .visit-grid{grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
   .lede{font-size:1.28rem}
@@ -157,6 +167,14 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
 </style>
 </head>
 <body>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="ico-photo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+    <circle cx="8.5" cy="10" r="1.4"></circle>
+    <path d="M20.5 16.5 15.5 11.5 11 16l-2.5-2.5L3.5 18.5"></path>
+  </symbol>
+</svg>
 
 <header>
   <div class="bar">
@@ -210,6 +228,51 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
 
 <section class="soft">
   <div class="wrap">
+    <h2>Our work</h2>
+    <p class="lede">A look at the salon and the nails that come out of it.</p>
+    <div class="gallery">
+      <!-- PLACEHOLDER GALLERY: owner-supplied photos only. Do not hotlink Google Maps image URLs. -->
+      <div class="tile">
+        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
+        <span class="label">Storefront</span>
+        <span class="sub">Your sign at Cedar Center</span>
+      </div>
+      <div class="tile">
+        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
+        <span class="label">Inside the salon</span>
+        <span class="sub">Chairs, stations, the space</span>
+      </div>
+      <div class="tile">
+        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
+        <span class="label">Pedicure setup</span>
+        <span class="sub">Where the hot stone work happens</span>
+      </div>
+      <div class="tile">
+        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
+        <span class="label">Nail art</span>
+        <span class="sub">Close-ups of your best designs</span>
+      </div>
+      <div class="tile">
+        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
+        <span class="label">Gel &amp; acrylic sets</span>
+        <span class="sub">Finished work on real clients</span>
+      </div>
+      <div class="tile">
+        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
+        <span class="label">Color selection</span>
+        <span class="sub">The wall of options</span>
+      </div>
+    </div>
+    <p class="gallery-note">
+      <b>These six spots are waiting for your photos.</b> Send over the pictures you already
+      have — the ones on your Google listing are a good starting point — and they drop straight
+      in. No stock photography, ever.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
     <h2>What customers say</h2>
     <div class="quotes">
       <figure>
@@ -228,7 +291,7 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
   </div>
 </section>
 
-<section>
+<section class="soft">
   <div class="wrap">
     <h2>Why people keep coming back</h2>
     <ul class="facts">
@@ -237,14 +300,10 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
       <li><span class="tick">✓</span><span><b>Allan and Tiffany work with clients directly</b> — reviewers ask for them by name.</span></li>
       <li><span class="tick">✓</span><span><b>Easy to find in Cedar Center</b> on E Old Shakopee Rd, with parking out front.</span></li>
     </ul>
-    <div class="photo-ph" style="margin-top:32px">
-      <b>Your photos go here</b>
-      We'll use real pictures of your space and your nail work — no stock photography.
-    </div>
   </div>
 </section>
 
-<section class="soft">
+<section>
   <div class="wrap">
     <h2>Visit us</h2>
     <div class="visit-grid">
