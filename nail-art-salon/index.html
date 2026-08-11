@@ -121,6 +121,11 @@ figcaption b{color:var(--ink);font-weight:650}
 
 .visit-grid{display:grid;gap:24px;grid-template-columns:1fr;margin-top:28px}
 .addr{font-style:normal;font-size:1.1rem;line-height:1.55}
+.addr a{
+  color:var(--ink);text-decoration:underline;text-decoration-thickness:1.5px;
+  text-underline-offset:3px;text-decoration-color:rgba(139,58,98,.4);
+}
+.addr a:hover{color:var(--brand-dark);text-decoration-color:var(--brand)}
 .addr .land{display:block;color:var(--muted);font-size:.95rem;margin-top:6px}
 .hours{
   margin-top:18px;padding:14px 16px;background:#fff;
@@ -147,6 +152,7 @@ figcaption b{color:var(--ink);font-weight:650}
 footer{background:var(--ink);color:#e8e8e8;padding:40px 0 34px;font-size:.95rem}
 footer a{color:#fff}
 footer .nap{display:grid;gap:6px;margin-bottom:22px}
+footer .nap a{text-decoration:underline;text-underline-offset:3px}
 footer .name{font-weight:700;font-size:1.05rem;color:#fff}
 .specnote{border-top:1px solid rgba(255,255,255,.16);padding-top:16px;color:#a9a9a9;font-size:.82rem;max-width:62ch}
 
@@ -309,7 +315,7 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
     <div class="visit-grid">
       <div>
         <address class="addr">
-          1712 E Old Shakopee Rd<br>Bloomington, MN 55425
+          <a href="https://www.google.com/maps/dir/?api=1&destination=1712%20E%20Old%20Shakopee%20Rd%2C%20Bloomington%2C%20MN%2055425" target="_blank" rel="noopener" aria-label="Get directions to 1712 E Old Shakopee Rd, Bloomington, MN 55425">1712 E Old Shakopee Rd<br>Bloomington, MN 55425</a>
           <span class="land">Located in Cedar Center</span>
         </address>
         <!-- PLACEHOLDER: full weekly hours unconfirmed — the Google listing only showed today's closing time. Confirm with owner. -->
@@ -334,7 +340,7 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
   <div class="wrap">
     <div class="nap">
       <span class="name">Nail Art Salon</span>
-      <span>1712 E Old Shakopee Rd, Bloomington, MN 55425</span>
+      <span><a href="https://www.google.com/maps/dir/?api=1&destination=1712%20E%20Old%20Shakopee%20Rd%2C%20Bloomington%2C%20MN%2055425" target="_blank" rel="noopener">1712 E Old Shakopee Rd, Bloomington, MN 55425</a></span>
       <span><a href="tel:+19525940609">(952) 594-0609</a></span>
     </div>
     <p class="specnote">
