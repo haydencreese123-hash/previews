@@ -151,7 +151,73 @@ footer .nap{display:grid;gap:6px;margin-bottom:22px}
 footer .name{font-weight:700;font-size:1.05rem;color:#fff}
 .specnote{border-top:1px solid rgba(255,255,255,.16);padding-top:16px;color:#a9a9a9;font-size:.82rem;max-width:62ch}
 
+
+/* header nav */
+.bar{flex-wrap:wrap}
+.btn-sm{white-space:nowrap}
+.nav{
+  display:flex;align-items:center;gap:2px;order:3;width:100%;
+  border-top:1px solid var(--line);
+  margin:0 calc(var(--pad)*-1) -10px;padding:0 8px;
+}
+.nav a{
+  flex:1;text-align:center;padding:12px 6px;font-size:.92rem;font-weight:600;
+  color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;
+}
+.nav a:hover,.nav a:focus{color:var(--brand-dark);border-bottom-color:var(--brand)}
+section[id]{scroll-margin-top:106px}
+
+/* booking form */
+.form-wrap{
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
+  padding:22px;margin-top:28px;max-width:640px;
+}
+.field{display:grid;gap:6px;margin-bottom:16px}
+.field label{font-weight:650;font-size:.92rem}
+.field input,.field select,.field textarea{
+  font:inherit;font-size:1rem;color:var(--ink);background:#fff;width:100%;
+  border:1px solid var(--line);border-radius:10px;padding:12px 13px;min-height:48px;
+}
+.field textarea{min-height:92px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:2px solid var(--brand);outline-offset:1px;border-color:var(--brand);
+}
+.field-row{display:grid;gap:0 16px;grid-template-columns:1fr}
+.btn-block{width:100%}
+.form-msg{
+  display:none;margin:16px 0 0;padding:13px 15px;border-radius:10px;
+  background:var(--bg-soft);border:1px solid var(--line);font-size:.95rem;
+}
+.form-msg.show{display:block}
+.form-note{font-size:.86rem;color:var(--muted);margin:16px 0 0;line-height:1.5}
+
+/* gallery */
+.gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);margin-top:28px}
+.tile{
+  aspect-ratio:4/3;border:2px dashed var(--line);border-radius:var(--radius);
+  background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:5px;text-align:center;padding:14px 10px;color:var(--muted);
+}
+.tile .glyph{width:26px;height:26px;color:var(--brand);opacity:.55;margin-bottom:2px}
+.tile .label{font-weight:650;color:var(--ink);font-size:.92rem;line-height:1.25}
+.tile .sub{font-size:.78rem;line-height:1.35}
+.gallery-note{
+  margin-top:20px;padding:14px 16px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius);font-size:.95rem;color:var(--muted);
+}
+.gallery-note b{color:var(--ink)}
+
 @media (min-width:768px){
+  .bar{flex-wrap:nowrap}
+  .nav{order:0;width:auto;border-top:none;margin:0;padding:0;gap:6px}
+  .nav a{flex:0 0 auto;padding:8px 14px;border-bottom:none;border-radius:999px}
+  .nav a:hover,.nav a:focus{background:var(--bg-soft)}
+  section[id]{scroll-margin-top:74px}
+  .field-row{grid-template-columns:1fr 1fr}
+  .btn-block{width:auto;min-width:220px}
+  .gallery{grid-template-columns:repeat(3,1fr);gap:18px}
+  .tile .label{font-size:1rem}
+
   section{padding:72px 0}
   .hero{padding:84px 0 88px}
   .cta-row{flex-direction:row;margin-top:32px}
@@ -166,9 +232,22 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
 </head>
 <body>
 
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <symbol id="ico-photo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+    <circle cx="8.5" cy="10" r="1.4"></circle>
+    <path d="M20.5 16.5 15.5 11.5 11 16l-2.5-2.5L3.5 18.5"></path>
+  </symbol>
+</svg>
+
 <header>
   <div class="bar">
     <div class="brandname">Envy Nails Hennepin<span>Minneapolis, MN</span></div>
+    <nav class="nav" aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#book">Book</a>
+    </nav>
     <a class="btn btn-primary btn-sm" href="tel:+16123741883"><span class="calltext-short">Call</span><span class="calltext-long">Call (612) 374-1883</span></a>
   </div>
 </header>
@@ -190,7 +269,7 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
   </div>
 </section>
 
-<section>
+<section id="services">
   <div class="wrap">
     <h2>What we do</h2>
     <p class="lede">The services customers name most often in their reviews.</p>
@@ -206,7 +285,50 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
   </div>
 </section>
 
-<section class="soft">
+<section class="soft" id="gallery">
+  <div class="wrap">
+    <h2>Our work</h2>
+    <p class="lede">A look at the salon and the nails that come out of it.</p>
+    <div class="gallery">
+      <!-- PLACEHOLDER GALLERY: owner-supplied photos only. Do not hotlink Google Maps image URLs. -->
+      <div class="tile">
+        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
+        <span class="label">Storefront</span>
+        <span class="sub">Your sign on Hennepin Ave</span>
+      </div>
+      <div class="tile">
+        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
+        <span class="label">Inside the salon</span>
+        <span class="sub">Stations and the space</span>
+      </div>
+      <div class="tile">
+        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
+        <span class="label">Pedicure chairs</span>
+        <span class="sub">Where people settle in</span>
+      </div>
+      <div class="tile">
+        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
+        <span class="label">Dip &amp; gel sets</span>
+        <span class="sub">Finished work on real clients</span>
+      </div>
+      <div class="tile">
+        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
+        <span class="label">Nail art</span>
+        <span class="sub">Close-ups of your best designs</span>
+      </div>
+      <div class="tile">
+        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
+        <span class="label">The color wall</span>
+        <span class="sub">The wall of options</span>
+      </div>
+    </div>
+    <p class="gallery-note">
+      <b>These six spots are waiting for your photos.</b> Send over the pictures you already have — the ones on your Google listing are a good starting point — and they drop straight in. No stock photography, ever.
+    </p>
+  </div>
+</section>
+
+<section>
   <div class="wrap">
     <h2>What customers say</h2>
     <div class="quotes">
@@ -218,7 +340,7 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
   </div>
 </section>
 
-<section>
+<section class="soft">
   <div class="wrap">
     <h2>What this salon is known for</h2>
     <ul class="facts">
@@ -227,10 +349,64 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
       <li><span class="tick">&#10003;</span><span><b>Techs people ask for by name.</b> Nina and Eric both get named in reviews by customers who came back for them.</span></li>
       <li><span class="tick">&#10003;</span><span><b>4.4 stars across 221 Google reviews.</b> Hundreds of them, not a handful.</span></li>
     </ul>
-    <div class="photo-ph" style="margin-top:32px">
-      <b>Your photos go here</b>
-      We'll use real pictures of the salon and your work &mdash; no stock photography.
-    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <h2>Request an appointment</h2>
+    <p class="lede">Tell us what you need and when suits you, and we'll confirm your spot. Prefer to talk it through? <a href="tel:+16123741883">Call (612) 374-1883</a>.</p>
+    <!-- PREVIEW FORM: deliberately does not submit anywhere. GitHub Pages cannot process form
+         posts, so a live-looking form here would swallow real enquiries. At publish-client-live
+         time, add name="booking" data-netlify="true" and a honeypot to make this a real Netlify form. -->
+    <form class="form-wrap" id="bookform" novalidate>
+      <div class="field-row">
+        <div class="field">
+          <label for="bk-name">Your name</label>
+          <input id="bk-name" name="name" type="text" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="bk-phone">Phone number</label>
+          <input id="bk-phone" name="phone" type="tel" autocomplete="tel">
+        </div>
+      </div>
+      <div class="field">
+        <label for="bk-service">What are you booking?</label>
+        <select id="bk-service" name="service">
+            <option>Dip manicure</option>
+            <option>Manicure</option>
+            <option>Pedicure</option>
+            <option>Manicure and pedicure</option>
+            <option>Something else — I'll explain below</option>
+        </select>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="bk-day">Preferred day</label>
+          <input id="bk-day" name="day" type="date">
+        </div>
+        <div class="field">
+          <label for="bk-time">Preferred time</label>
+          <select id="bk-time" name="time">
+            <option>Morning</option>
+            <option>Early afternoon</option>
+            <option>Late afternoon</option>
+            <option>Evening</option>
+            <option>I'm flexible</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="bk-notes">Anything we should know? (optional)</label>
+        <textarea id="bk-notes" name="notes"></textarea>
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Send request</button>
+      <p class="form-msg" id="bk-msg"></p>
+      <p class="form-note">
+        A request is not a confirmed booking until we get back to you. If you need a time today,
+        calling is quicker.
+      </p>
+    </form>
   </div>
 </section>
 
@@ -274,6 +450,22 @@ footer .name{font-weight:700;font-size:1.05rem;color:#fff}
     </p>
   </div>
 </footer>
+
+
+<script>
+(function(){
+  var f=document.getElementById('bookform');
+  if(!f){return;}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var m=document.getElementById('bk-msg');
+    m.textContent='This is a design preview, so nothing was sent anywhere. On the live site, a request like this reaches the shop straight away.';
+    m.className='form-msg show';
+    m.setAttribute('role','status');
+    m.scrollIntoView({block:'center'});
+  });
+})();
+</script>
 
 </body>
 </html>
