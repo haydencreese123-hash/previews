@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JS Barber Shop | Barber Shop in Crystal, MN</title>
-<meta name="description" content="JS Barber Shop is a barber shop on Bass Lake Rd in Crystal, MN. Fades, trims and careful detail work. Call (631) 355-1748.">
+<title>JS Barber Shop | Barber shop in Crystal, MN</title>
+<meta name="description" content="Barber shop on Bass Lake Rd in Crystal, MN — fades, trims and careful detail work, in English and Spanish. Call (631) 355-1748.">
 <!-- SPEC PREVIEW ONLY: keep this noindex tag until the client approves and this goes on their own domain. -->
 <meta name="robots" content="noindex, nofollow">
 <script type="application/ld+json">
@@ -37,433 +37,435 @@
   --line:#e6e6e6;
   --bg:#ffffff;
   --bg-soft:#f6f6f7;
+  --tint:#eeeef0;
+  --tint-line:#cfcfd4;
+  --tint-ink:#75757f;
+  --tint-bg:#fbfbfc;
+  --dark:#1c1c20;
+  --dark-ink:#dededf;
+  --dark-link:#f0f0f2;
+  --dark-line:#3a3a40;
+  --dark-muted:#9a9aa2;
   --radius:14px;
   --pad:20px;
   --max:1080px;
+  --hdr:112px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{
-  margin:0;
-  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-  color:var(--ink);
-  background:var(--bg);
-  font-size:1.05rem;
-  line-height:1.65;
-  -webkit-font-smoothing:antialiased;
-}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);font-size:1.05rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
-section{padding:52px 0}
+section{padding:52px 0;scroll-margin-top:var(--hdr)}
 section.soft{background:var(--bg-soft)}
 h1,h2,h3{line-height:1.2;margin:0 0 .5em}
-h1{font-size:clamp(1.9rem,6vw,3rem);letter-spacing:-.02em}
-h2{font-size:clamp(1.45rem,4vw,2rem);letter-spacing:-.01em}
-h3{font-size:1.15rem}
+h1{font-size:clamp(1.9rem,6vw,3rem)}
+h2{font-size:clamp(1.45rem,4.5vw,2rem)}
+h3{font-size:1.12rem}
 p{margin:0 0 1em}
-a{color:var(--brand-dark)}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:700;color:var(--brand);margin:0 0 .6em}
+.lede{font-size:1.12rem;color:var(--muted);max-width:60ch}
 
-/* header */
-header{
-  position:sticky;top:0;z-index:50;
-  background:rgba(255,255,255,.96);
-  backdrop-filter:saturate(180%) blur(8px);
-  border-bottom:1px solid var(--line);
-}
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px var(--pad);max-width:var(--max);margin:0 auto}
-.brandname{font-weight:700;font-size:1.05rem;letter-spacing:-.01em}
-.brandname span{display:block;font-weight:500;font-size:.72rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-.calltext-long{display:none}
+.brandname{font-weight:800;font-size:1.06rem;letter-spacing:-.01em;color:var(--ink);text-decoration:none;line-height:1.25}
+.brandname span{display:block;font-weight:500;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brand)}
+.callbtn{background:var(--brand);color:#fff;text-decoration:none;font-weight:700;padding:11px 16px;border-radius:999px;white-space:nowrap;font-size:.95rem;min-height:46px;display:inline-flex;align-items:center}
+.callbtn:hover{background:var(--brand-dark)}
+nav{border-top:1px solid var(--line);background:#fff;overflow-x:auto}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0 var(--pad);max-width:var(--max);margin:0 auto;justify-content:flex-start}
+nav a{display:block;padding:12px 10px;color:var(--muted);text-decoration:none;font-size:.9rem;font-weight:600;white-space:nowrap;border-bottom:2px solid transparent}
+nav a:hover{color:var(--brand);border-bottom-color:var(--brand)}
 
-/* buttons */
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:8px;
-  min-height:48px;padding:0 20px;border-radius:999px;
-  font-weight:650;font-size:1rem;text-decoration:none;
-  border:1.5px solid transparent;transition:background .15s,color .15s,border-color .15s;
-}
-.btn-primary{background:var(--brand);color:#fff}
-.btn-primary:hover{background:var(--brand-dark)}
-.btn-ghost{background:#fff;color:var(--brand-dark);border-color:var(--line)}
-.btn-ghost:hover{border-color:var(--brand)}
-.btn-sm{min-height:42px;padding:0 16px;font-size:.95rem}
-.cta-row{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+.hero{background:linear-gradient(160deg,var(--brand) 0%,var(--brand-dark) 100%);color:#fff;padding:56px 0 60px}
+.hero h1{margin-bottom:.35em}
+.hero .lede{color:rgba(255,255,255,.92);font-size:1.15rem}
+.proof{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:7px 15px;font-size:.92rem;font-weight:600;margin-bottom:18px}
+.btnrow{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:1rem;border:2px solid transparent}
+.btn-primary{background:#fff;color:var(--brand-dark)}
+.btn-primary:hover{background:#e9e9ec}
+.btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-solid{background:var(--brand);color:#fff}
+.btn-solid:hover{background:var(--brand-dark)}
 
-/* hero */
-.hero{
-  padding:56px 0 60px;
-  background:linear-gradient(160deg,var(--bg-soft) 0%,#fff 65%);
-  border-bottom:1px solid var(--line);
-}
-.eyebrow{
-  display:inline-block;font-size:.78rem;font-weight:650;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--brand-dark);
-  background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 13px;margin-bottom:18px;
-}
-.lede{font-size:1.18rem;color:var(--muted);max-width:44ch}
-.proof{display:flex;align-items:center;gap:8px;margin-top:20px;font-weight:600;flex-wrap:wrap}
-.stars{color:var(--brand);letter-spacing:.06em}
-.proof small{font-weight:400;color:var(--muted)}
+.strip{background:var(--brand-dark);color:#fff;padding:16px 0}
+.strip .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:center;text-align:center}
+.strip b{font-size:.95rem;letter-spacing:.02em}
+.chip{display:inline-flex;align-items:center;min-height:40px;padding:8px 16px;border-radius:999px;font-size:.9rem;font-weight:600;text-decoration:none;background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3)}
+.chip:hover{background:rgba(255,255,255,.26)}
+.chip.todo{background:transparent;border-style:dashed;color:rgba(255,255,255,.75);font-weight:500}
 
-/* cards */
-.grid{display:grid;gap:16px;grid-template-columns:1fr;margin-top:28px}
-.card{
-  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-  padding:22px;box-shadow:0 1px 2px rgba(0,0,0,.03);
-}
-.card h3{margin-bottom:.35em}
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}
+.card h3{margin-bottom:.35em;color:var(--brand-dark)}
 .card p{margin:0;color:var(--muted);font-size:.98rem}
-.card-ph{border-style:dashed;border-width:2px;background:var(--bg-soft);box-shadow:none}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--brand);background:var(--tint);border-radius:999px;padding:3px 9px;margin-bottom:10px}
 
-/* quotes */
-.quotes{display:grid;gap:16px;grid-template-columns:1fr;margin-top:28px}
-figure{margin:0;background:#fff;border:1px solid var(--line);border-left:3px solid var(--brand);border-radius:var(--radius);padding:22px}
-blockquote{margin:0 0 12px;font-size:1.05rem}
-figcaption{font-size:.9rem;color:var(--muted)}
-figcaption b{color:var(--ink);font-weight:650}
+.menunote{border-left:3px solid var(--brand);background:#fff;padding:14px 16px;border-radius:0 var(--radius) var(--radius) 0;margin-bottom:24px;font-size:.96rem;color:var(--muted)}
+.menugroup{margin-bottom:28px}
+.menugroup h3{color:var(--brand-dark);border-bottom:2px solid var(--line);padding-bottom:8px;margin-bottom:4px}
+.menugroup .sub{font-size:.86rem;color:var(--muted);margin:0 0 10px}
+.menugroup ul{list-style:none;margin:0;padding:0}
+.menugroup li{display:flex;align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.menugroup li:last-child{border-bottom:none}
+.svc{flex:1 1 auto}
+.dots{flex:1 1 auto;border-bottom:1px dotted #c9c9c9;transform:translateY(-4px)}
+/* PLACEHOLDER: price slots are intentionally empty — owner fills these in. Never put a number here without the owner. */
+.price-tbd{flex:0 0 auto;min-width:62px;text-align:center;color:var(--tint-ink);border:1px dashed var(--tint-line);border-radius:8px;padding:2px 8px;font-size:.9rem;font-weight:600;background:var(--tint-bg)}
 
-/* facts list */
-.facts{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px}
-.facts li{display:flex;gap:12px;align-items:flex-start}
-.facts .tick{color:var(--brand);font-weight:700;flex:0 0 auto}
+blockquote{margin:0;border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}
+blockquote p{font-size:1.02rem;margin-bottom:.8em}
+blockquote cite{font-style:normal;font-size:.88rem;color:var(--muted)}
+blockquote cite b{color:var(--ink)}
 
-/* visit */
-.visit-grid{display:grid;gap:24px;grid-template-columns:1fr;margin-top:28px}
-.addr{font-style:normal;font-size:1.1rem;line-height:1.55}
-.hours{
-  margin-top:18px;padding:14px 16px;background:#fff;
-  border:1px solid var(--line);border-radius:var(--radius);font-size:.98rem;
-}
-.hours b{color:var(--ink)}
-.hours small{display:block;color:var(--muted);margin-top:2px}
+.tile{border:2px dashed var(--tint-line);border-radius:var(--radius);background:var(--tint-bg);min-height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px;color:var(--muted)}
+.tile b{display:block;color:var(--brand-dark);font-size:.95rem;margin-bottom:4px}
+.tile span{font-size:.84rem;line-height:1.45}
 
-/* photo placeholder */
-.photo-ph{
-  border:2px dashed var(--line);border-radius:var(--radius);
-  background:var(--bg-soft);padding:44px 22px;text-align:center;
-  color:var(--muted);font-size:.95rem;
-}
-.photo-ph b{display:block;color:var(--ink);margin-bottom:4px}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.facts li{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:15px 17px}
+.facts .mark{color:var(--brand);font-weight:800;flex:0 0 auto}
 
-/* footer */
-footer{background:var(--ink);color:#e8e8e8;padding:40px 0 34px;font-size:.95rem}
-footer a{color:#fff}
-footer .nap{display:grid;gap:6px;margin-bottom:22px}
-footer .name{font-weight:700;font-size:1.05rem;color:#fff}
-.specnote{border-top:1px solid rgba(255,255,255,.16);padding-top:16px;color:#a9a9a9;font-size:.82rem;max-width:62ch}
+form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-top:20px}
+.field{margin-bottom:16px}
+label{display:block;font-weight:700;font-size:.92rem;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:12px 13px;border:1px solid #cfcfcf;border-radius:10px;background:#fff;color:var(--ink);min-height:48px}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--brand);outline-offset:1px;border-color:var(--brand)}
+.two{display:grid;gap:16px;grid-template-columns:1fr}
+.formnote{font-size:.9rem;color:var(--muted);margin:14px 0 0}
+#formmsg{display:none;margin-top:16px;padding:14px 16px;border-radius:10px;background:var(--tint);border:1px solid var(--tint-line);color:var(--brand-dark);font-size:.95rem}
 
+.addr{font-size:1.12rem;font-weight:600;margin-bottom:.2em}
+.hourline{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:15px 17px;margin:18px 0}
 
-/* header nav */
-.bar{flex-wrap:wrap}
-.btn-sm{white-space:nowrap}
-.nav{
-  display:flex;align-items:center;gap:2px;order:3;width:100%;
-  border-top:1px solid var(--line);
-  margin:0 calc(var(--pad)*-1) -10px;padding:0 8px;
-}
-.nav a{
-  flex:1;text-align:center;padding:12px 6px;font-size:.92rem;font-weight:600;
-  color:var(--muted);text-decoration:none;border-bottom:2px solid transparent;
-}
-.nav a:hover,.nav a:focus{color:var(--brand-dark);border-bottom-color:var(--brand)}
-section[id]{scroll-margin-top:106px}
-
-/* booking form */
-.form-wrap{
-  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-  padding:22px;margin-top:28px;max-width:640px;
-}
-.field{display:grid;gap:6px;margin-bottom:16px}
-.field label{font-weight:650;font-size:.92rem}
-.field input,.field select,.field textarea{
-  font:inherit;font-size:1rem;color:var(--ink);background:#fff;width:100%;
-  border:1px solid var(--line);border-radius:10px;padding:12px 13px;min-height:48px;
-}
-.field textarea{min-height:92px;resize:vertical}
-.field input:focus,.field select:focus,.field textarea:focus{
-  outline:2px solid var(--brand);outline-offset:1px;border-color:var(--brand);
-}
-.field-row{display:grid;gap:0 16px;grid-template-columns:1fr}
-.btn-block{width:100%}
-.form-msg{
-  display:none;margin:16px 0 0;padding:13px 15px;border-radius:10px;
-  background:var(--bg-soft);border:1px solid var(--line);font-size:.95rem;
-}
-.form-msg.show{display:block}
-.form-note{font-size:.86rem;color:var(--muted);margin:16px 0 0;line-height:1.5}
-
-/* gallery */
-.gallery{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);margin-top:28px}
-.tile{
-  aspect-ratio:4/3;border:2px dashed var(--line);border-radius:var(--radius);
-  background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;
-  gap:5px;text-align:center;padding:14px 10px;color:var(--muted);
-}
-.tile .glyph{width:26px;height:26px;color:var(--brand);opacity:.55;margin-bottom:2px}
-.tile .label{font-weight:650;color:var(--ink);font-size:.92rem;line-height:1.25}
-.tile .sub{font-size:.78rem;line-height:1.35}
-.gallery-note{
-  margin-top:20px;padding:14px 16px;background:#fff;border:1px solid var(--line);
-  border-radius:var(--radius);font-size:.95rem;color:var(--muted);
-}
-.gallery-note b{color:var(--ink)}
+footer{background:var(--dark);color:var(--dark-ink);padding:40px 0 30px;font-size:.95rem}
+footer a{color:var(--dark-link)}
+footer h3{color:#fff;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.8em}
+.fgrid{display:grid;gap:26px;grid-template-columns:1fr}
+.specnote{margin-top:28px;padding-top:18px;border-top:1px solid var(--dark-line);color:var(--dark-muted);font-size:.84rem}
 
 @media (min-width:768px){
-  .bar{flex-wrap:nowrap}
-  .nav{order:0;width:auto;border-top:none;margin:0;padding:0;gap:6px}
-  .nav a{flex:0 0 auto;padding:8px 14px;border-bottom:none;border-radius:999px}
-  .nav a:hover,.nav a:focus{background:var(--bg-soft)}
-  section[id]{scroll-margin-top:74px}
-  .field-row{grid-template-columns:1fr 1fr}
-  .btn-block{width:auto;min-width:220px}
-  .gallery{grid-template-columns:repeat(3,1fr);gap:18px}
-  .tile .label{font-size:1rem}
-
-  section{padding:72px 0}
-  .hero{padding:84px 0 88px}
-  .cta-row{flex-direction:row;margin-top:32px}
-  .grid{grid-template-columns:repeat(2,1fr);gap:20px}
-  .quotes{grid-template-columns:repeat(3,1fr)}
-  .visit-grid{grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
-  .lede{font-size:1.28rem}
-  .calltext-long{display:inline}
-  .calltext-short{display:none}
+  :root{--hdr:72px}
+  section{padding:70px 0}
+  .bar{padding:0 var(--pad)}
+  header .inner{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:var(--max);margin:0 auto;padding:0 var(--pad);min-height:72px}
+  header .inner .bar{padding:0;flex:0 0 auto;max-width:none;margin:0}
+  nav{border-top:none;flex:1 1 auto;overflow:visible}
+  nav ul{padding:0;justify-content:flex-end}
+  .hero{padding:88px 0 92px}
+  .grid.g2{grid-template-columns:repeat(2,1fr)}
+  .grid.g3{grid-template-columns:repeat(3,1fr)}
+  .grid.g4{grid-template-columns:repeat(2,1fr)}
+  .two{grid-template-columns:1fr 1fr}
+  .facts{grid-template-columns:repeat(2,1fr)}
+  .fgrid{grid-template-columns:1.4fr 1fr 1fr}
+  .menucols{display:grid;gap:0 44px;grid-template-columns:1fr 1fr}
+}
+@media (min-width:1000px){
+  .grid.g4{grid-template-columns:repeat(4,1fr)}
 }
 </style>
 </head>
 <body>
 
-<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
-  <symbol id="ico-photo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
-    <circle cx="8.5" cy="10" r="1.4"></circle>
-    <path d="M20.5 16.5 15.5 11.5 11 16l-2.5-2.5L3.5 18.5"></path>
-  </symbol>
-</svg>
-
 <header>
-  <div class="bar">
-    <div class="brandname">JS Barber Shop<span>Crystal, MN</span></div>
-    <nav class="nav" aria-label="Sections">
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#book">Book</a>
+  <div class="inner">
+    <div class="bar">
+      <a class="brandname" href="#top">JS Barber Shop<span>Crystal, MN</span></a>
+      <a class="callbtn" href="tel:+16313551748">Call now</a>
+    </div>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#book">Book</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
     </nav>
-    <a class="btn btn-primary btn-sm" href="tel:+16313551748"><span class="calltext-short">Call</span><span class="calltext-long">Call (631) 355-1748</span></a>
   </div>
 </header>
 
+<main id="top">
+
+<!-- 1. HERO -->
 <section class="hero">
   <div class="wrap">
-    <span class="eyebrow">Barber shop · Crystal</span>
-    <h1>JS Barber Shop</h1>
+    <span class="proof">★ 4.7 · 241 Google reviews</span>
+    <h1>Welcome to JS Barber Shop</h1>
     <p class="lede">A barber shop on Bass Lake Rd in Crystal, known for fades and clean trims — with barbers who speak English and Spanish.</p>
-    <div class="proof">
-      <span class="stars">★★★★★</span>
-      <span>4.7</span>
-      <small>· 241 Google reviews</small>
-    </div>
-    <div class="cta-row">
+    <div class="btnrow">
       <a class="btn btn-primary" href="tel:+16313551748">Call (631) 355-1748</a>
-      <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=4800%20Bass%20Lake%20Rd%2C%20Crystal%2C%20MN%2055428" target="_blank" rel="noopener">Get directions</a>
+      <a class="btn btn-ghost" href="#book">Request an appointment</a>
     </div>
   </div>
 </section>
 
-<section id="services">
+<!-- 2. SOCIAL STRIP -->
+<div class="strip">
   <div class="wrap">
-    <h2>What we cut</h2>
-    <p class="lede">The services customers name most often in their reviews.</p>
-    <div class="grid">
-      <!-- Cards 1-3 sourced from Google review keyword chips: trim (11), fade (10), meticulous cut (2). -->
-      <div class="card"><h3>Fades</h3><p>The cut this shop gets asked for most — ten reviews mention fades by name. Tell your barber how you want it blended and they'll work to it.</p></div>
-      <div class="card"><h3>Trims and cleanups</h3><p>Trims come up more than anything else in the reviews. Full cut or a quick tidy-up between visits, same care either way.</p></div>
-      <div class="card"><h3>Detail work</h3><p>Customers use the word meticulous. Nobody here is rushing you out of the chair to get to the next head.</p></div>
-      <!-- PLACEHOLDER: full service list unconfirmed. Owner to supply the real menu (beard work, kids' cuts, line-ups, etc.). -->
-      <div class="card card-ph"><h3>Your full service list</h3><p>Send over everything you offer and it goes here — beard work, kids' cuts, line-ups, hot towel shaves, whatever belongs on the board.</p></div>
-    </div>
-    <p style="margin-top:24px">Looking for something not listed? <a href="tel:+16313551748">Call (631) 355-1748</a> and ask.</p>
+    <b>Find us online</b>
+    <a class="chip" href="https://www.google.com/maps/search/?api=1&amp;query=JS+Barber+Shop+4800+Bass+Lake+Rd+Crystal+MN+55428">Google</a>
+    <!-- PLACEHOLDER: swap these for real profile links, or delete the chips, once the owner confirms. -->
+    <span class="chip todo">Facebook — add yours</span>
+    <span class="chip todo">Instagram — add yours</span>
   </div>
-</section>
+</div>
 
-<section class="soft" id="gallery">
+<!-- 3. ABOUT -->
+<section id="about">
   <div class="wrap">
-    <h2>Our work</h2>
-    <p class="lede">A look at the shop and the cuts that come out of it.</p>
-    <div class="gallery">
-      <!-- PLACEHOLDER GALLERY: owner-supplied photos only. Do not hotlink Google Maps image URLs. -->
-      <div class="tile">
-        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
-        <span class="label">Storefront</span>
-        <span class="sub">Your sign on Bass Lake Rd</span>
-      </div>
-      <div class="tile">
-        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
-        <span class="label">Inside the shop</span>
-        <span class="sub">Chairs, mirrors, the space</span>
-      </div>
-      <div class="tile">
-        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
-        <span class="label">Fades</span>
-        <span class="sub">Close-ups of the blend</span>
-      </div>
-      <div class="tile">
-        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
-        <span class="label">Finished cuts</span>
-        <span class="sub">Real clients, real work</span>
-      </div>
-      <div class="tile">
-        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
-        <span class="label">The barbers</span>
-        <span class="sub">The people behind the chairs</span>
-      </div>
-      <div class="tile">
-        <svg class="glyph" aria-hidden="true"><use href="#ico-photo"></use></svg>
-        <span class="label">Waiting area</span>
-        <span class="sub">Where people sit and wait</span>
-      </div>
-    </div>
-    <p class="gallery-note">
-      <b>These six spots are waiting for your photos.</b> Send over the pictures you already have — the ones on your Google listing are a good starting point — and they drop straight in. No stock photography, ever.
-    </p>
+    <p class="eyebrow">Our story</p>
+    <h2>A neighbourhood shop on Bass Lake Rd</h2>
+    <p class="lede">JS Barber Shop sits on Bass Lake Rd in Crystal. Across 241 Google reviews the same words keep coming back: fades, trims, and work customers describe as meticulous. The shop runs in English and Spanish — reviewers point it out often enough that it is clearly part of why people choose it. <span lang="es">Se habla español.</span></p>
+    <p class="lede">Barbers here get asked for by name. One reviewer, sixteen years in Minnesota, says they found their favourite barber on the first visit.</p>
+    <!-- PLACEHOLDER: the owner's own account of the shop goes here. Ask on the call: how long open, who owns it, how many chairs, what they want customers to know. -->
   </div>
 </section>
 
-<section>
+<!-- 4. SERVICES -->
+<section id="services" class="soft">
   <div class="wrap">
-    <h2>What customers say</h2>
-    <div class="quotes">
-      <!-- Verbatim Google reviews. Reviewer surnames abbreviated per standing rule. -->
-      <figure><blockquote>"Yasmin gave me the best haircut I could ever ask for. I have been in Minnesota for nearly 16 years, and I just found my favorite barber today."</blockquote><figcaption><b>Phuong H.</b> · Google review</figcaption></figure>
-      <figure><blockquote>"The place is diverse and they can offer service in Spanish and English."</blockquote><figcaption><b>Google review highlight</b></figcaption></figure>
-      <figure><blockquote>"Very reasonable pricing and great quality haircuts"</blockquote><figcaption><b>Google review highlight</b></figcaption></figure>
+    <p class="eyebrow">The chair</p>
+    <h2>What this shop is known for</h2>
+    <p class="lede">Every service below is one your own reviewers call out by name.</p>
+    <div class="grid g3" style="margin-top:26px">
+      <div class="card">
+        <span class="tag">10 reviews mention it</span>
+        <h3>Fades</h3>
+        <p>The cut this shop gets asked for most — ten reviews mention fades by name. Tell your barber how you want it blended and they'll work to it.</p>
+      </div>
+      <div class="card">
+        <span class="tag">11 reviews mention it</span>
+        <h3>Trims &amp; Cleanups</h3>
+        <p>Trims come up more than anything else in the reviews. Full cut or a quick tidy-up between visits, same care either way.</p>
+      </div>
+      <div class="card">
+        <span class="tag">From your reviews</span>
+        <h3>Detail Work</h3>
+        <p>Customers use the word meticulous. Nobody here is rushing you out of the chair to get to the next head.</p>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- 5. SERVICE MENU — prices deliberately blank -->
+<section id="menu">
+  <div class="wrap">
+    <p class="eyebrow">Service menu</p>
+    <h2>The full list, with your prices</h2>
+    <div class="menunote">
+      <strong>The price slots are blank on purpose.</strong> Nothing here is priced until you tell us what you charge —
+      send over your current menu and every number drops straight in. Rows you don't offer come off, and anything
+      missing gets added. Only the Cuts group is confirmed from your reviews; the rest are starting suggestions.
+    </div>
+    <div class="menucols">
+      <div class="menugroup">
+        <h3>Cuts</h3>
+        <p class="sub">Confirmed by your reviews</p>
+        <ul>
+          <li><span class="svc">Haircut</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Fade</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Trim / cleanup between visits</span><span class="dots"></span><span class="price-tbd">$</span></li>
+        </ul>
+      </div>
+      <div class="menugroup">
+        <!-- PLACEHOLDER: these rows are common for the category, NOT confirmed for this shop. Confirm or delete each one. -->
+        <h3>Beard &amp; Shave</h3>
+        <p class="sub">Suggested rows — tell us which of these you actually offer</p>
+        <ul>
+          <li><span class="svc">Beard trim</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Beard shape-up</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Hot towel shave</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Line-up / edge-up</span><span class="dots"></span><span class="price-tbd">$</span></li>
+        </ul>
+      </div>
+      <div class="menugroup">
+        <!-- PLACEHOLDER: not confirmed for this shop. -->
+        <h3>Kids &amp; Seniors</h3>
+        <p class="sub">Suggested rows — tell us which of these you actually offer</p>
+        <ul>
+          <li><span class="svc">Kids' cut</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Senior cut</span><span class="dots"></span><span class="price-tbd">$</span></li>
+        </ul>
+      </div>
+      <div class="menugroup">
+        <!-- PLACEHOLDER: not confirmed for this shop. -->
+        <h3>Extras</h3>
+        <p class="sub">Suggested rows — tell us which of these you actually offer</p>
+        <ul>
+          <li><span class="svc">Hair wash</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Hair design / freestyle</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Colour</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Eyebrow shaping</span><span class="dots"></span><span class="price-tbd">$</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="lede" style="margin-top:6px">Looking for something not on the list? <a href="tel:+16313551748">Call (631) 355-1748</a> and ask.</p>
+  </div>
+</section>
+
+<!-- 6. WHY US -->
 <section class="soft">
   <div class="wrap">
-    <h2>What this shop is known for</h2>
-    <ul class="facts">
-      <li><span class="tick">✓</span><span><b>4.7 stars across 241 Google reviews.</b> Not a handful of ratings — hundreds of them.</span></li>
-      <li><span class="tick">✓</span><span><b>English and Spanish spoken.</b> Customers point this out in their reviews. Se habla español.</span></li>
-      <li><span class="tick">✓</span><span><b>Barbers people ask for by name.</b> One reviewer drove away calling Yasmin their favorite barber in sixteen years of living here.</span></li>
+    <p class="eyebrow">Why people come back</p>
+    <h2>241 reviews, and they mostly say the same thing</h2>
+    <ul class="facts" style="margin-top:22px">
+      <li><span class="mark">◆</span><div><strong>4.7 stars across 241 Google reviews.</strong> Not a handful of ratings — hundreds of them.</div></li>
+      <li><span class="mark">◆</span><div><strong>English and Spanish spoken.</strong> Customers point this out in their reviews. <span lang="es">Se habla español.</span></div></li>
+      <li><span class="mark">◆</span><div><strong>Barbers people ask for by name.</strong> One reviewer drove away calling Yasmin their favourite barber in sixteen years of living here.</div></li>
+      <li><span class="mark">◆</span><div><strong>Easy to find on Bass Lake Rd</strong> in Crystal, with parking at the door.</div></li>
     </ul>
   </div>
 </section>
 
+<!-- 7. REVIEWS -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">From the chair</p>
+    <h2>What people say on Google</h2>
+    <div class="grid g3" style="margin-top:24px">
+      <blockquote>
+        <p>“Yasmin gave me the best haircut I could ever ask for. I have been in Minnesota for nearly 16 years, and I just found my favorite barber today.”</p>
+        <cite><b>Phuong H.</b> · Google review</cite>
+      </blockquote>
+      <blockquote>
+        <p>“The place is diverse and they can offer service in Spanish and English.”</p>
+        <cite><b>Google review highlights</b> · 241 reviews</cite>
+      </blockquote>
+      <blockquote>
+        <p>“Very reasonable pricing and great quality haircuts”</p>
+        <cite><b>Google review highlights</b> · 241 reviews</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- 8. GALLERY -->
+<section id="gallery" class="soft">
+  <div class="wrap">
+    <p class="eyebrow">Gallery</p>
+    <h2>The shop, and the work</h2>
+    <p class="lede">These six tiles are waiting on your photos. Phone pictures are fine — good light is all that matters.</p>
+    <div class="grid g3" style="margin-top:24px">
+      <!-- PLACEHOLDER: all six tiles. Never hotlink Google Maps images and never publish customer-uploaded photos. -->
+      <div class="tile"><b>Storefront</b><span>Your sign on Bass Lake Rd, from the parking lot</span></div>
+      <div class="tile"><b>Inside the shop</b><span>The chairs and mirrors, wide shot</span></div>
+      <div class="tile"><b>A finished fade</b><span>The cut people come for, close up from the back</span></div>
+      <div class="tile"><b>Beard work</b><span>Before and after, if you have a pair</span></div>
+      <div class="tile"><b>Your barbers</b><span>The team at the chair</span></div>
+      <div class="tile"><b>The waiting area</b><span>Where people sit</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. BOOK -->
 <section id="book">
   <div class="wrap">
+    <p class="eyebrow">Booking</p>
     <h2>Request an appointment</h2>
-    <p class="lede">Tell us what you need and when suits you, and we'll confirm your spot. Prefer to talk it through? <a href="tel:+16313551748">Call (631) 355-1748</a>.</p>
-    <!-- PREVIEW FORM: deliberately does not submit anywhere. GitHub Pages cannot process form
-         posts, so a live-looking form here would swallow real enquiries. At publish-client-live
-         time, add name="booking" data-netlify="true" and a honeypot to make this a real Netlify form. -->
-    <form class="form-wrap" id="bookform" novalidate>
-      <div class="field-row">
+    <p class="lede">Calling is still the fastest way to get in — <a href="tel:+16313551748">(631) 355-1748</a>. If it's easier, send a request here and the shop will get back to you to confirm a time.</p>
+    <!-- PLACEHOLDER: this shop already has a Square booking link on its Maps listing. At launch, this button
+         should point at their real Square URL instead of posting our form. Get the URL on the call. -->
+    <form id="bookform" novalidate>
+      <div class="two">
         <div class="field">
-          <label for="bk-name">Your name</label>
-          <input id="bk-name" name="name" type="text" autocomplete="name">
+          <label for="bname">Your name</label>
+          <input id="bname" name="name" type="text" autocomplete="name" required>
         </div>
         <div class="field">
-          <label for="bk-phone">Phone number</label>
-          <input id="bk-phone" name="phone" type="tel" autocomplete="tel">
+          <label for="bphone">Phone number</label>
+          <input id="bphone" name="phone" type="tel" autocomplete="tel" required>
         </div>
       </div>
       <div class="field">
-        <label for="bk-service">What are you booking?</label>
-        <select id="bk-service" name="service">
-            <option>Fade</option>
-            <option>Trim or cleanup</option>
-            <option>Haircut</option>
-            <option>Something else — I'll explain below</option>
+        <label for="bservice">Service</label>
+        <select id="bservice" name="service">
+          <option>Haircut</option>
+          <option>Fade</option>
+          <option>Trim / cleanup</option>
+          <option>Something else — I'll explain below</option>
         </select>
       </div>
-      <div class="field-row">
+      <div class="two">
         <div class="field">
-          <label for="bk-day">Preferred day</label>
-          <input id="bk-day" name="day" type="date">
+          <label for="bday">Preferred day</label>
+          <input id="bday" name="day" type="date">
         </div>
         <div class="field">
-          <label for="bk-time">Preferred time</label>
-          <select id="bk-time" name="time">
+          <label for="btime">Preferred time</label>
+          <select id="btime" name="time">
             <option>Morning</option>
             <option>Early afternoon</option>
             <option>Late afternoon</option>
             <option>Evening</option>
-            <option>I'm flexible</option>
           </select>
         </div>
       </div>
       <div class="field">
-        <label for="bk-notes">Anything we should know? (optional)</label>
-        <textarea id="bk-notes" name="notes"></textarea>
+        <label for="bnotes">Anything else?</label>
+        <textarea id="bnotes" name="notes" placeholder="A barber you'd like to ask for, how you want it blended, how many of you are coming…"></textarea>
       </div>
-      <button class="btn btn-primary btn-block" type="submit">Send request</button>
-      <p class="form-msg" id="bk-msg"></p>
-      <p class="form-note">
-        A request is not a confirmed booking until we get back to you. If you need a time today,
-        calling is quicker.
-      </p>
+      <button class="btn btn-solid" type="submit" style="width:100%;border:none;cursor:pointer">Send request</button>
+      <p class="formnote">You'll get a call back to confirm. Nothing is booked until the shop confirms it.</p>
+      <div id="formmsg" role="status"></div>
     </form>
   </div>
 </section>
 
-<section class="soft">
+<!-- 10. VISIT -->
+<section id="visit" class="soft">
   <div class="wrap">
-    <h2>Visit us</h2>
-    <div class="visit-grid">
-      <div>
-        <address class="addr">
-          4800 Bass Lake Rd<br>Crystal, MN 55428
-        </address>
-        <!-- PLACEHOLDER: full weekly hours unconfirmed — the listing only exposed today's closing time. -->
-        <div class="hours">
-          <b>Open today until 8 PM</b>
-          <small>Hours vary by day — give us a call to check before you head over.</small>
-        </div>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="tel:+16313551748">Call (631) 355-1748</a>
-          <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=4800%20Bass%20Lake%20Rd%2C%20Crystal%2C%20MN%2055428" target="_blank" rel="noopener">Directions</a>
-        </div>
-      </div>
-      <div class="card">
-        <h3>Before you come in</h3>
-        <p>Call ahead if you want a specific barber or want to check the wait before you drive over. It's the fastest way to get the chair you want.</p>
-      </div>
+    <p class="eyebrow">Visit us</p>
+    <h2>Bass Lake Rd, Crystal</h2>
+    <p class="addr">4800 Bass Lake Rd<br>Crystal, MN 55428</p>
+    <!-- PLACEHOLDER: only today's closing time was available from the listing. Get the full weekly schedule from the owner. -->
+    <div class="hourline"><strong>Open today until 8 PM</strong><br><span style="color:var(--muted);font-size:.94rem">Call to confirm today's hours.</span></div>
+    <div class="btnrow">
+      <a class="btn btn-solid" href="tel:+16313551748">Call (631) 355-1748</a>
+      <a class="btn btn-ghost" style="border-color:var(--brand);color:var(--brand)" href="https://www.google.com/maps/search/?api=1&amp;query=JS+Barber+Shop+4800+Bass+Lake+Rd+Crystal+MN+55428">Get directions</a>
     </div>
   </div>
 </section>
 
+</main>
+
 <footer>
   <div class="wrap">
-    <div class="nap">
-      <span class="name">JS Barber Shop</span>
-      <span>4800 Bass Lake Rd, Crystal, MN 55428</span>
-      <span><a href="tel:+16313551748">(631) 355-1748</a></span>
+    <div class="fgrid">
+      <div>
+        <h3>JS Barber Shop</h3>
+        <p>4800 Bass Lake Rd<br>Crystal, MN 55428<br><a href="tel:+16313551748">(631) 355-1748</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <!-- PLACEHOLDER: full weekly hours needed from the owner. -->
+        <p>Open today until 8 PM.<br>Call to confirm today's hours.</p>
+      </div>
+      <div>
+        <h3>Go to</h3>
+        <p><a href="#services">Services</a> · <a href="#menu">Menu</a><br><a href="#gallery">Gallery</a> · <a href="#book">Book</a><br><a href="#visit">Visit</a></p>
+      </div>
     </div>
-    <p class="specnote">
-      This is a proposed website design prepared for JS Barber Shop. It is not the business's
-      official site and is not affiliated with it. Business details shown were taken from the
-      public Google Maps listing and need to be confirmed by the owner.
-    </p>
+    <p class="specnote">This page is a proposed design prepared for JS Barber Shop. It is not the shop's live website, and it is not affiliated with or endorsed by the business. Details shown were taken from the public Google Maps listing and need to be confirmed by the owner.</p>
   </div>
 </footer>
 
-
 <script>
-(function(){
-  var f=document.getElementById('bookform');
-  if(!f){return;}
-  f.addEventListener('submit',function(e){
-    e.preventDefault();
-    var m=document.getElementById('bk-msg');
-    m.textContent='This is a design preview, so nothing was sent anywhere. On the live site, a request like this reaches the shop straight away.';
-    m.className='form-msg show';
-    m.setAttribute('role','status');
-    m.scrollIntoView({block:'center'});
-  });
-})();
+/* SPEC PREVIEW ONLY. This handler stops the form from pretending to work.
+   At launch, delete this block and either switch the form to the live handler
+   or point the button at the shop's existing Square booking link. */
+document.getElementById('bookform').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var m = document.getElementById('formmsg');
+  m.textContent = 'This is a design preview, so nothing was sent anywhere. On the live site, a request like this reaches the shop straight away.';
+  m.style.display = 'block';
+  m.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
 </script>
-
 </body>
 </html>
