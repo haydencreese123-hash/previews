@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samantha's Mini Spa | Nail salon in Minneapolis, MN</title>
+<meta name="description" content="Nail salon in Bridgewater Lofts on 10th Ave S, downtown Minneapolis. Call (612) 338-2121.">
+<!-- SPEC PREVIEW ONLY: keep this noindex tag until the client approves and this goes on their own domain. -->
+<meta name="robots" content="noindex, nofollow">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NailSalon",
+  "name": "Samantha's Mini Spa",
+  "telephone": "+1-612-338-2121",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "229 10th Ave S",
+    "addressLocality": "Minneapolis",
+    "addressRegion": "MN",
+    "postalCode": "55415",
+    "addressCountry": "US"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.2",
+    "reviewCount": "168"
+  }
+}
+</script>
+<style>
+:root{
+  /* Deep orchid — distinct from the plum used by the other nail salons, the spa green of Bee Nails
+     and the bronze of the braiding shop. Seven previews, seven palettes. */
+  --brand:#6b4a7a;
+  --brand-dark:#4e3459;
+  --ink:#1a1a1a;
+  --muted:#5a5a5a;
+  --line:#e6e6e6;
+  --bg:#ffffff;
+  --bg-soft:#f8f6f9;
+  --tint:#efe9f2;
+  --tint-line:#cfc0d6;
+  --tint-ink:#8a7594;
+  --tint-bg:#fcfafd;
+  --dark:#241c29;
+  --dark-ink:#e2dbe6;
+  --dark-link:#efe9f2;
+  --dark-line:#3e3345;
+  --dark-muted:#a396aa;
+  --radius:14px;
+  --pad:20px;
+  --max:1080px;
+  --hdr:112px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);font-size:1.05rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+section{padding:52px 0;scroll-margin-top:var(--hdr)}
+section.soft{background:var(--bg-soft)}
+h1,h2,h3{line-height:1.2;margin:0 0 .5em}
+h1{font-size:clamp(1.9rem,6vw,3rem)}
+h2{font-size:clamp(1.45rem,4.5vw,2rem)}
+h3{font-size:1.12rem}
+p{margin:0 0 1em}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:700;color:var(--brand);margin:0 0 .6em}
+.lede{font-size:1.12rem;color:var(--muted);max-width:60ch}
+
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px var(--pad);max-width:var(--max);margin:0 auto}
+.brandname{font-weight:800;font-size:1.06rem;letter-spacing:-.01em;color:var(--ink);text-decoration:none;line-height:1.25}
+.brandname span{display:block;font-weight:500;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brand)}
+.callbtn{background:var(--brand);color:#fff;text-decoration:none;font-weight:700;padding:11px 16px;border-radius:999px;white-space:nowrap;font-size:.95rem;min-height:46px;display:inline-flex;align-items:center}
+.callbtn:hover{background:var(--brand-dark)}
+nav{border-top:1px solid var(--line);background:#fff;overflow-x:auto}
+nav ul{display:flex;gap:4px;list-style:none;margin:0;padding:0 var(--pad);max-width:var(--max);margin:0 auto;justify-content:flex-start}
+nav a{display:block;padding:12px 10px;color:var(--muted);text-decoration:none;font-size:.9rem;font-weight:600;white-space:nowrap;border-bottom:2px solid transparent}
+nav a:hover{color:var(--brand);border-bottom-color:var(--brand)}
+
+.hero{background:linear-gradient(160deg,var(--brand) 0%,var(--brand-dark) 100%);color:#fff;padding:56px 0 60px}
+.hero h1{margin-bottom:.35em}
+.hero .lede{color:rgba(255,255,255,.92);font-size:1.15rem}
+.proof{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:7px 15px;font-size:.92rem;font-weight:600;margin-bottom:18px}
+.btnrow{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:13px 22px;border-radius:999px;text-decoration:none;font-weight:700;font-size:1rem;border:2px solid transparent}
+.btn-primary{background:#fff;color:var(--brand-dark)}
+.btn-primary:hover{background:#ece5f0}
+.btn-ghost{border-color:rgba(255,255,255,.6);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn-solid{background:var(--brand);color:#fff}
+.btn-solid:hover{background:var(--brand-dark)}
+
+.strip{background:var(--brand-dark);color:#fff;padding:16px 0}
+.strip .wrap{display:flex;flex-wrap:wrap;align-items:center;gap:10px;justify-content:center;text-align:center}
+.strip b{font-size:.95rem;letter-spacing:.02em}
+.chip{display:inline-flex;align-items:center;min-height:40px;padding:8px 16px;border-radius:999px;font-size:.9rem;font-weight:600;text-decoration:none;background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3)}
+.chip:hover{background:rgba(255,255,255,.26)}
+.chip.todo{background:transparent;border-style:dashed;color:rgba(255,255,255,.75);font-weight:500}
+
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}
+.card h3{margin-bottom:.35em;color:var(--brand-dark)}
+.card p{margin:0;color:var(--muted);font-size:.98rem}
+
+.menunote{border-left:3px solid var(--brand);background:#fff;padding:14px 16px;border-radius:0 var(--radius) var(--radius) 0;margin-bottom:24px;font-size:.96rem;color:var(--muted)}
+.menugroup{margin-bottom:28px}
+.menugroup h3{color:var(--brand-dark);border-bottom:2px solid var(--line);padding-bottom:8px;margin-bottom:4px}
+.menugroup .sub{font-size:.86rem;color:var(--muted);margin:0 0 10px}
+.menugroup ul{list-style:none;margin:0;padding:0}
+.menugroup li{display:flex;align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.menugroup li:last-child{border-bottom:none}
+.svc{flex:1 1 auto}
+.dots{flex:1 1 auto;border-bottom:1px dotted #c9c9c9;transform:translateY(-4px)}
+/* PLACEHOLDER: price slots are intentionally empty — owner fills these in. Never put a number here without the owner. */
+.price-tbd{flex:0 0 auto;min-width:62px;text-align:center;color:var(--tint-ink);border:1px dashed var(--tint-line);border-radius:8px;padding:2px 8px;font-size:.9rem;font-weight:600;background:var(--tint-bg)}
+
+blockquote{margin:0;border:1px solid var(--line);border-radius:var(--radius);padding:20px;background:#fff}
+blockquote p{font-size:1.02rem;margin-bottom:.8em}
+blockquote cite{font-style:normal;font-size:.88rem;color:var(--muted)}
+blockquote cite b{color:var(--ink)}
+
+.tile{border:2px dashed var(--tint-line);border-radius:var(--radius);background:var(--tint-bg);min-height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px;color:var(--muted)}
+.tile b{display:block;color:var(--brand-dark);font-size:.95rem;margin-bottom:4px}
+.tile span{font-size:.84rem;line-height:1.45}
+
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.facts li{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:15px 17px}
+.facts .mark{color:var(--brand);font-weight:800;flex:0 0 auto}
+
+form{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px;margin-top:20px}
+.field{margin-bottom:16px}
+label{display:block;font-weight:700;font-size:.92rem;margin-bottom:6px}
+input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:12px 13px;border:1px solid #cfcfcf;border-radius:10px;background:#fff;color:var(--ink);min-height:48px}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--brand);outline-offset:1px;border-color:var(--brand)}
+.two{display:grid;gap:16px;grid-template-columns:1fr}
+.formnote{font-size:.9rem;color:var(--muted);margin:14px 0 0}
+#formmsg{display:none;margin-top:16px;padding:14px 16px;border-radius:10px;background:var(--tint);border:1px solid var(--tint-line);color:var(--brand-dark);font-size:.95rem}
+
+.addr{font-size:1.12rem;font-weight:600;margin-bottom:.2em}
+.hourline{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:15px 17px;margin:18px 0}
+
+footer{background:var(--dark);color:var(--dark-ink);padding:40px 0 30px;font-size:.95rem}
+footer a{color:var(--dark-link)}
+footer h3{color:#fff;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;margin-bottom:.8em}
+.fgrid{display:grid;gap:26px;grid-template-columns:1fr}
+.specnote{margin-top:28px;padding-top:18px;border-top:1px solid var(--dark-line);color:var(--dark-muted);font-size:.84rem}
+
+@media (min-width:768px){
+  :root{--hdr:72px}
+  section{padding:70px 0}
+  .bar{padding:0 var(--pad)}
+  header .inner{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:var(--max);margin:0 auto;padding:0 var(--pad);min-height:72px}
+  header .inner .bar{padding:0;flex:0 0 auto;max-width:none;margin:0}
+  nav{border-top:none;flex:1 1 auto;overflow:visible}
+  nav ul{padding:0;justify-content:flex-end}
+  .hero{padding:88px 0 92px}
+  .grid.g2{grid-template-columns:repeat(2,1fr)}
+  .grid.g3{grid-template-columns:repeat(3,1fr)}
+  .two{grid-template-columns:1fr 1fr}
+  .facts{grid-template-columns:repeat(2,1fr)}
+  .fgrid{grid-template-columns:1.4fr 1fr 1fr}
+  .menucols{display:grid;gap:0 44px;grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <div class="bar">
+      <a class="brandname" href="#top">Samantha's Mini Spa<span>Minneapolis, MN</span></a>
+      <a class="callbtn" href="tel:+16123382121">Call now</a>
+    </div>
+    <!-- NAV: five items, not the usual six. There is no Services section on this build — see the note
+         above the menu. Add "Services" back here the moment the review chips are available. -->
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#book">Book</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- 1. HERO -->
+<section class="hero">
+  <div class="wrap">
+    <span class="proof">★ 4.2 · 168 Google reviews</span>
+    <h1>Welcome to Samantha's Mini Spa</h1>
+    <p class="lede">A nail salon in Bridgewater Lofts on 10th Ave S — right in downtown Minneapolis.</p>
+    <div class="btnrow">
+      <a class="btn btn-primary" href="tel:+16123382121">Call (612) 338-2121</a>
+      <a class="btn btn-ghost" href="#book">Request an appointment</a>
+    </div>
+  </div>
+</section>
+
+<!-- 2. SOCIAL STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <b>Find us online</b>
+    <a class="chip" href="https://www.google.com/maps/search/?api=1&amp;query=Samanthas+Mini+Spa+229+10th+Ave+S+Minneapolis+MN+55415">Google</a>
+    <!-- PLACEHOLDER: swap these for real profile links, or delete the chips, once the owner confirms. -->
+    <span class="chip todo">Instagram — add yours</span>
+    <span class="chip todo">Facebook — add yours</span>
+  </div>
+</div>
+
+<!-- 3. ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <p class="eyebrow">Our story</p>
+    <h2>Downtown, and easy to get to</h2>
+    <p class="lede">Samantha's Mini Spa is a nail salon in Bridgewater Lofts on 10th Ave S in Minneapolis, with a 4.2 rating across 168 Google reviews. Google's own summary of those reviews leads with the location, then the service, then the prices.</p>
+    <p class="lede">Customers describe the staff as personable and inviting.</p>
+    <!-- PLACEHOLDER: the owner's own account of the salon goes here, and it matters more on this build than
+         on any other. The Google listing is unclaimed and carries almost no detail — no service list, no
+         named staff, no owner photos. Ask on the call: how long open, who runs it, how many technicians,
+         whether "Mini Spa" means services beyond nails, and what they want people to know. -->
+  </div>
+</section>
+
+<!-- SERVICES CARD SECTION DELIBERATELY OMITTED.
+     Service cards are only ever built from review keyword chips or named review text, and this listing
+     supplied neither — the paste carried the review-summary highlights and then stopped, with no chips
+     and no individual reviews. Inventing four cards from a category label is exactly the fabrication this
+     build is supposed to avoid, so the section and its nav item were removed rather than padded.
+     TO RESTORE: get the review chips and a few named reviews from the listing, then add the section back
+     between About (white) and Menu, set Menu to white, Reviews to soft, Gallery to white, Book to soft,
+     Visit to white, and put "Services" back in the nav. -->
+
+<!-- 4. SERVICE MENU — prices deliberately blank, and every row unconfirmed -->
+<section id="menu" class="soft">
+  <div class="wrap">
+    <p class="eyebrow">Service menu</p>
+    <h2>The full list, with your prices</h2>
+    <div class="menunote">
+      <strong>Every row below is a suggestion, and every price slot is blank.</strong> The Google listing carries
+      no service list at all, so nothing here could be confirmed — these are the services a salon like this
+      usually offers, laid out as a starting point. Tell us which are real, which come off, what is missing,
+      and what you charge, and this becomes your actual menu.
+      <strong>The last group is a genuine question:</strong> does "Mini Spa" mean treatments beyond nails?
+    </div>
+    <div class="menucols">
+      <div class="menugroup">
+        <!-- PLACEHOLDER: nothing in this group is confirmed. -->
+        <h3>Manicures</h3>
+        <p class="sub">Suggested rows — tell us which of these you actually offer</p>
+        <ul>
+          <li><span class="svc">Classic Manicure</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Gel Manicure</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Dip powder</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Polish change</span><span class="dots"></span><span class="price-tbd">$</span></li>
+        </ul>
+      </div>
+      <div class="menugroup">
+        <!-- PLACEHOLDER: nothing in this group is confirmed. -->
+        <h3>Pedicures</h3>
+        <p class="sub">Suggested rows — tell us which of these you actually offer</p>
+        <ul>
+          <li><span class="svc">Classic Pedicure</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Deluxe / spa pedicure</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Gel colour on toes</span><span class="dots"></span><span class="price-tbd">$</span></li>
+        </ul>
+      </div>
+      <div class="menugroup">
+        <!-- PLACEHOLDER: nothing in this group is confirmed. -->
+        <h3>Nail Enhancements</h3>
+        <p class="sub">Suggested rows — tell us which of these you actually offer</p>
+        <ul>
+          <li><span class="svc">Acrylic Full Set</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Acrylic Fill In</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Nail art, per nail</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Take-off / removal</span><span class="dots"></span><span class="price-tbd">$</span></li>
+        </ul>
+      </div>
+      <div class="menugroup">
+        <!-- PLACEHOLDER: this whole group exists to ask a question the business name raises. Delete it
+             entirely if they only do nails. -->
+        <h3>Beyond nails?</h3>
+        <p class="sub">Only if "Mini Spa" means more than nails — tell us either way</p>
+        <ul>
+          <li><span class="svc">Waxing</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Facial</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Massage add-on</span><span class="dots"></span><span class="price-tbd">$</span></li>
+          <li><span class="svc">Eyelash extensions</span><span class="dots"></span><span class="price-tbd">$</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="lede" style="margin-top:6px">Looking for something not on the list? <a href="tel:+16123382121">Call (612) 338-2121</a> and ask.</p>
+  </div>
+</section>
+
+<!-- 5. WHY US -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Why people come back</p>
+    <h2>What the reviews point to</h2>
+    <ul class="facts" style="margin-top:22px">
+      <li><span class="mark">◆</span><div><strong>4.2 stars across 168 Google reviews.</strong> A long record rather than a handful of ratings.</div></li>
+      <li><span class="mark">◆</span><div><strong>The location is the first thing customers mention.</strong> Google's own summary of the reviews leads with it.</div></li>
+      <li><span class="mark">◆</span><div><strong>Right downtown, in Bridgewater Lofts</strong> on 10th Ave S in Minneapolis.</div></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 6. REVIEWS — two quotes, not three.
+     Google surfaced three highlights and the middle one is a complaint about a manicure chipping, so it
+     is left off. No named reviews were available from the listing paste. Pull two or three attributable
+     quotes before this goes to a client and this section gets materially stronger. -->
+<section class="soft">
+  <div class="wrap">
+    <p class="eyebrow">Our happy customers</p>
+    <h2>What people say on Google</h2>
+    <div class="grid g2" style="margin-top:24px">
+      <blockquote>
+        <p>“Great location, great service, and good prices.”</p>
+        <cite><b>Google review highlights</b> · 168 reviews</cite>
+      </blockquote>
+      <blockquote>
+        <p>“It was an awesome experience and the staff was personable and inviting.”</p>
+        <cite><b>Google review highlights</b> · 168 reviews</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- 7. GALLERY -->
+<section id="gallery">
+  <div class="wrap">
+    <p class="eyebrow">Gallery</p>
+    <h2>View our work</h2>
+    <p class="lede">These six tiles are waiting on your photos. Phone pictures are fine — good light is all that matters.</p>
+    <div class="grid g3" style="margin-top:24px">
+      <!-- PLACEHOLDER: all six tiles. Never hotlink Google Maps images and never publish customer-uploaded
+           photos. NOTE: this listing has NO "By owner" photo category — every picture on it was uploaded by
+           a customer, so none of them can be used and the salon currently has no photos of its own online.
+           That makes this section one of the most valuable things the site offers them. -->
+      <div class="tile"><b>The entrance</b><span>Your door at Bridgewater Lofts, from 10th Ave S</span></div>
+      <div class="tile"><b>Inside the salon</b><span>A wide shot of the room</span></div>
+      <div class="tile"><b>Pedicure chairs</b><span>Set up and ready for a client</span></div>
+      <div class="tile"><b>A finished manicure</b><span>Close up, in good light</span></div>
+      <div class="tile"><b>The colour wall</b><span>The shades people choose from</span></div>
+      <div class="tile"><b>Your team at work</b><span>Mid-appointment, with a client</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. BOOK -->
+<section id="book" class="soft">
+  <div class="wrap">
+    <p class="eyebrow">Booking</p>
+    <h2>Request an appointment</h2>
+    <p class="lede">Calling is still the fastest way to get in — <a href="tel:+16123382121">(612) 338-2121</a>. If it's easier, send a request here and the salon will get back to you to confirm a time.</p>
+    <!-- NOTE: no extra "earned" field on this build. Every other site in the set carries one that came out
+         of its review chips — a technician picker, a braid-size question, a price-quote toggle. This listing
+         supplied no chips, so there was nothing to earn one from. Add it once the review data is in. -->
+    <form id="bookform" novalidate>
+      <div class="two">
+        <div class="field">
+          <label for="bname">Your name</label>
+          <input id="bname" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="bphone">Phone number</label>
+          <input id="bphone" name="phone" type="tel" autocomplete="tel" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="bservice">Service</label>
+        <select id="bservice" name="service">
+          <option>Manicure</option>
+          <option>Pedicure</option>
+          <option>Manicure &amp; pedicure together</option>
+          <option>Not sure yet — help me choose</option>
+          <option>Something else — I'll explain below</option>
+        </select>
+      </div>
+      <div class="two">
+        <div class="field">
+          <label for="bday">Preferred day</label>
+          <input id="bday" name="day" type="date">
+        </div>
+        <div class="field">
+          <label for="btime">Preferred time</label>
+          <select id="btime" name="time">
+            <option>Morning</option>
+            <option>Early afternoon</option>
+            <option>Late afternoon</option>
+            <option>Evening</option>
+          </select>
+        </div>
+      </div>
+      <div class="field">
+        <label for="bnotes">Anything else?</label>
+        <textarea id="bnotes" name="notes" placeholder="A colour or shape you have in mind, how many of you are coming, first visit…"></textarea>
+      </div>
+      <button class="btn btn-solid" type="submit" style="width:100%;border:none;cursor:pointer">Send request</button>
+      <p class="formnote">You'll get a call back to confirm. Nothing is booked until the salon confirms it.</p>
+      <div id="formmsg" role="status"></div>
+    </form>
+  </div>
+</section>
+
+<!-- 9. VISIT -->
+<section id="visit">
+  <div class="wrap">
+    <p class="eyebrow">Visit us</p>
+    <h2>Bridgewater Lofts, Minneapolis</h2>
+    <p class="addr">229 10th Ave S<br>Minneapolis, MN 55415</p>
+    <p class="lede">Located in Bridgewater Lofts, on 10th Ave S in downtown Minneapolis.</p>
+    <!-- PLACEHOLDER — HOURS: the listing showed only "Open · Closes 7 PM" at the time this was built. That
+         is a live status, not a schedule, and a static page cannot track it — so this page makes no claim
+         about whether the salon is open right now. Get the full weekly schedule and replace this block. -->
+    <div class="hourline"><strong>Hours change through the week</strong><br><span style="color:var(--muted);font-size:.94rem">Call to check today's hours before you come in.</span></div>
+    <div class="btnrow">
+      <a class="btn btn-solid" href="tel:+16123382121">Call (612) 338-2121</a>
+      <a class="btn btn-ghost" style="border-color:var(--brand);color:var(--brand)" href="https://www.google.com/maps/search/?api=1&amp;query=Samanthas+Mini+Spa+229+10th+Ave+S+Minneapolis+MN+55415">Get directions</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <h3>Samantha's Mini Spa</h3>
+        <p>229 10th Ave S<br>Minneapolis, MN 55415<br><a href="tel:+16123382121">(612) 338-2121</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <!-- PLACEHOLDER: full weekly hours needed from the owner. -->
+        <p>Hours change through the week.<br>Call to check today's hours.</p>
+      </div>
+      <div>
+        <h3>Go to</h3>
+        <p><a href="#menu">Menu</a> · <a href="#gallery">Gallery</a><br><a href="#book">Book</a> · <a href="#visit">Visit</a></p>
+      </div>
+    </div>
+    <p class="specnote">This page is a proposed design prepared for Samantha's Mini Spa. It is not the salon's live website, and it is not affiliated with or endorsed by the business. Details shown were taken from the public Google Maps listing and need to be confirmed by the owner.</p>
+  </div>
+</footer>
+
+<script>
+/* SPEC PREVIEW ONLY. This handler stops the form from pretending to work.
+   At launch, delete this block and switch the form to the live handler. */
+document.getElementById('bookform').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var m = document.getElementById('formmsg');
+  m.textContent = 'This is a design preview, so nothing was sent anywhere. On the live site, a request like this reaches the shop straight away.';
+  m.style.display = 'block';
+  m.scrollIntoView({ behavior: 'smooth', block: 'center' });
+});
+</script>
+</body>
+</html>
